@@ -24,10 +24,11 @@ $(document).ready(function() {
 
   function parallax() {
     var scrolled = $(window).scrollTop();
+    var reference = $("#projects").css("top")
     if (scrolled > 1200) {
-    $("#proj1").css('left', 350 + -((scrolled - 1200) * 0.15) + 'px');
-    $("#proj2").css('left', 150 + ((scrolled - 1500) * 0.25) + 'px');
-    $("#proj3").css('left', 400 + -((scrolled - 1800) * 0.3) + 'px');
+    $("#proj1").css('left', 0 + ((scrolled - 1500) * 0.3) + 'px');
+    $("#proj2").css('right', 0 + ((scrolled - 1500) * 0.3) + 'px');
+    $("#proj3").css('left', 0 + ((scrolled - 1500) * 0.3) + 'px');
     }
   }
 
@@ -35,6 +36,7 @@ $(document).ready(function() {
     var scrolled = $(window).scrollTop();
     if (scrolled > 400) {
       $("#skills").fadeIn(2000);
+      $("#moreskill").fadeIn(2000);
     }
   }
 
@@ -84,7 +86,7 @@ $(document).ready(function() {
       function frame() {
           if (pos == 0) {
               clearInterval(id);
-              $("#l" + link).css("transition", 1 + "s");
+              $("#l" + link).css("transition", 0.5 + "s");
           } else {
               pos--;
               elem.style.top = pos + 'px';
@@ -98,8 +100,15 @@ $(document).ready(function() {
     moveMoreProj();
   });
 
+  function displaySkills(){
+    $("#moreskill").click(function(){
+      $("#add-skill").slideToggle("slow");
+    })
+  };
+
   moveName();
   movePic();
+  displaySkills();
   setTimeout(function(){moveLink(1);}, 4000);
   setTimeout(function(){moveLink(2);}, 4200);
   setTimeout(function(){moveLink(3);}, 4400);

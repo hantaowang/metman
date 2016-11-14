@@ -1,7 +1,13 @@
+html{
+  width:100%;
+  margin: 0;
+  overflow-x: hidden;
+}
 body{
-  width: 100%;
   height: 5000px;
   background: white;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #name{
@@ -9,29 +15,36 @@ body{
   font-size: 100px;
   position: absolute;
   top: 50px;
-  left: 10%;
   display: none;
   z-index: 10;
+  left: calc(35% - 325px);
+
+}
+
+#header{
+  width: 100%;
+  position: relative;
+  height: 700px;
 }
 
 #mypic{
-  height: 500px;
-  width: auto;
+  height: auto;
+  width: 25%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 300px;
-  right: 10%;
+  right: calc(35% - 300px);
   z-index: 5;
   display: none;
 }
 
 #mypic-fake{
-  height: 500px;
-  width: auto;
+  height: auto;
+  width: 25%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 125px;
-  right: 10%;
+  right: calc(35% - 300px);
   z-index: 0;
   display: none;
 }
@@ -41,11 +54,12 @@ body{
   width: 600px;
   position: absolute;
   top: 250px;
-  left: 10%;
   font-family: 'Share Tech Mono', monospace;
   font-size: 28px;
   line-height: 125%;
   z-index: 10;
+  left: calc(35% - 325px);
+
 }
 
 #links{
@@ -53,7 +67,8 @@ body{
   width: 500px;
   position: absolute;
   top: 550px;
-  left: 10%;
+  left: calc(35% - 325px);
+
 }
 
 .link{
@@ -100,17 +115,17 @@ body{
 #skill-title{
   font-family: 'Share Tech Mono', monospace;
   font-size: 45px;
-  position: absolute;
-  top: 750px;
+  position: relative;
+  top: 150px;
   left: 10%;
   font-weight: bold;
 }
 
 #skills{
-  width: 90%;
-  position: absolute;
-  top: 850px;
-  left: 5%;
+  width: 95%;
+  position: relative;
+  top: 175px;
+  margin: 0 auto;
   text-align: center;
   max-height: 600px;
   overflow: hidden;
@@ -183,10 +198,42 @@ h1{
   width: 100%;
 }
 
+#add-skill{
+  position: relative;
+  top: 300px;
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  display: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  background: gray;
+}
+
+#moreskill{
+  height: 75px;
+  width: 300px;
+  position: relative;
+  top: 250px;
+  margin: 0 auto;
+  border-style: solid;
+  color: black;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 32px;
+  line-height: 250%;
+  background-color: #FFB347;
+  transition: 1s;
+  display: none;
+}
+
+#moreskill:hover{
+  background-color: white;
+}
+
 #project-title{
-  position: absolute;
+  position: relative;
   left: 10%;
-  top: 1600px;
+  top: 400px;
   font-family: 'Share Tech Mono', monospace;
   font-size: 45px;
   height: 300px;
@@ -196,10 +243,11 @@ h1{
 }
 
 #projects{
-  position: absolute;
-  top: 1600px;
-  width: 100%;
+  position: relative;
+  top: 150px;
+  width: 90%;
   height: 1200px;
+  margin: 0 auto;
 }
 
 .project{
@@ -208,33 +256,33 @@ h1{
   height: 300px;
   z-index: 0;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 
 #proj1{
   top: 100px;
-  left: 350px;
+  left: 0;
   background-color: #00FFFF;
 }
 
 #proj2{
   top: 450px;
-  left: 150px;
+  right: 0;
   background-color: #fdfd96;
 }
 
 #proj3{
   top: 800px;
-  left: 450px;
+  left: 0;
   background-color: #77dd77;
 }
 
 #moreproj{
   height: 75px;
   width: 300px;
-  position: absolute;
-  top: 2750px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
   border-style: solid;
   color: black;
   text-align: center;
