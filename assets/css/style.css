@@ -1,0 +1,251 @@
+body{
+  width: 100%;
+  height: 5000px;
+  background: white;
+}
+
+#name{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 100px;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  display: none;
+  z-index: 10;
+}
+
+#mypic{
+  height: 500px;
+  width: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 300px;
+  right: 10%;
+  z-index: 5;
+  display: none;
+}
+
+#mypic-fake{
+  height: 500px;
+  width: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 125px;
+  right: 10%;
+  z-index: 0;
+  display: none;
+}
+
+#bio{
+  height: 300px;
+  width: 600px;
+  position: absolute;
+  top: 250px;
+  left: 10%;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 28px;
+  line-height: 125%;
+  z-index: 10;
+}
+
+#links{
+  height: 75px;
+  width: 500px;
+  position: absolute;
+  top: 550px;
+  left: 10%;
+}
+
+.link{
+  height: 50px;
+  width: auto;
+  margin-right: 25px;
+}
+
+.link:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#l1{
+  display: none;
+  position: relative;
+  top: 50px;
+}
+
+#l2{
+  display: none;
+  position: relative;
+  top: 50px;
+}
+
+#l3{
+  display: none;
+  position: relative;
+  top: 50px;
+}
+
+#l4{
+  display: none;
+  position: relative;
+  top: 50px;
+}
+
+#l5{
+  display: none;
+  position: relative;
+  top: 50px;
+}
+
+#skill-title{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 45px;
+  position: absolute;
+  top: 750px;
+  left: 10%;
+  font-weight: bold;
+}
+
+#skills{
+  width: 90%;
+  position: absolute;
+  top: 850px;
+  left: 5%;
+  text-align: center;
+  max-height: 600px;
+  overflow: hidden;
+  display: none;
+}
+
+.skill{
+  width: 225px;
+  margin: 25px 40px;
+  border: black;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.skill-img{
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  position: absolute;
+  left: 12.5px;
+  z-index: 10;
+  transition: 1s;
+}
+
+.skill-img:hover{
+  opacity: 0;
+}
+
+.skill-back{
+  height: 175px;
+  width: 175px;
+  overflow: hidden;
+  position: absolute;
+  left: 25px;
+  z-index: 0;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 24px;
+  line-height: 60%;
+
+}
+
+h1{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 90px;
+  line-height: 0%;
+
+}
+
+.skill-tall{
+  height: 180px;
+  width: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-wide{
+  width: 180px;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-name{
+  margin-top: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 32px;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+
+#project-title{
+  position: absolute;
+  left: 10%;
+  top: 1600px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 45px;
+  height: 300px;
+  width: 600px;
+  z-index: 10;
+  font-weight: bold;
+}
+
+#projects{
+  position: absolute;
+  top: 1600px;
+  width: 100%;
+  height: 1200px;
+}
+
+.project{
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  z-index: 0;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#proj1{
+  top: 100px;
+  left: 350px;
+  background-color: #00FFFF;
+}
+
+#proj2{
+  top: 450px;
+  left: 150px;
+  background-color: #fdfd96;
+}
+
+#proj3{
+  top: 800px;
+  left: 450px;
+  background-color: #77dd77;
+}
+
+#moreproj{
+  height: 75px;
+  width: 300px;
+  position: absolute;
+  top: 2750px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  color: black;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 32px;
+  line-height: 250%;
+  background-color: #FFB347;
+  display: none;
+  transition: 1s;
+}
+
+#moreproj:hover{
+  background-color: white;
+}
