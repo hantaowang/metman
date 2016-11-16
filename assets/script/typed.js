@@ -281,7 +281,7 @@ $(function(){
     }
 
     var project = {
-      strings: ["willwang$ cd/Documents/School/Projects", "My Projects"],
+      strings: ["airbears: willwang$ cd/School/My_Projects", "airbears: My_Projects willywang$"],
       typeSpeed: 1
     }
     $(function(){

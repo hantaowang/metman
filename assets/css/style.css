@@ -3,11 +3,43 @@ html{
   margin: 0;
   overflow-x: hidden;
 }
+
 body{
   height: 5000px;
   background: white;
-  width: 100%;
+  position: absolute;
   margin: 0 auto;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+#menu{
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  height: 200px;
+  width: 100px;
+  color: #D3D3D3
+  z-index: 1000;
+  display: none;
+  text-decoration: none;
+}
+
+.menu-item{
+  height: 25px;
+  margin-left: 20px;
+  color: #D3D3D3;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 20px;
+  text-align: left;
+}
+
+.menu-item:hover{
+  color: black;
+  cursor: pointer;
 }
 
 #name{
@@ -18,13 +50,13 @@ body{
   display: none;
   z-index: 10;
   left: calc(35% - 325px);
-
 }
 
 #header{
   width: 100%;
   position: relative;
   height: 700px;
+  z-index: 0;
 }
 
 #mypic{
@@ -117,24 +149,24 @@ body{
   font-size: 45px;
   position: relative;
   top: 150px;
-  left: 10%;
+  left: 15%;
   font-weight: bold;
 }
 
 #skills{
   width: 95%;
   position: relative;
+  left: 2%;
   top: 175px;
   margin: 0 auto;
   text-align: center;
-  max-height: 600px;
-  overflow: hidden;
   display: none;
+  transition: 1s;
 }
 
 .skill{
   width: 225px;
-  margin: 25px 40px;
+  margin: 25px 30px;
   border: black;
   height: 250px;
   display: inline-block;
@@ -207,6 +239,12 @@ h1{
   display: none;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   background: gray;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 80px;
+  line-height: 500px;
+  color: white;
+  left: 5%;
 }
 
 #moreskill{
@@ -214,6 +252,7 @@ h1{
   width: 300px;
   position: relative;
   top: 250px;
+  left: 5%;
   margin: 0 auto;
   border-style: solid;
   color: black;
@@ -232,7 +271,7 @@ h1{
 
 #project-title{
   position: relative;
-  left: 10%;
+  left: 15%;
   top: 400px;
   font-family: 'Share Tech Mono', monospace;
   font-size: 45px;
@@ -244,10 +283,11 @@ h1{
 
 #projects{
   position: relative;
-  top: 150px;
+  top: 125px;
   width: 90%;
   height: 1200px;
   margin: 0 auto;
+  left: 5%;
 }
 
 .project{
@@ -281,7 +321,7 @@ h1{
   height: 75px;
   width: 300px;
   position: relative;
-  top: 200px;
+  top: 100px;
   margin: 0 auto;
   border-style: solid;
   color: black;
@@ -292,6 +332,7 @@ h1{
   background-color: #FFB347;
   display: none;
   transition: 1s;
+  left: 5%;
 }
 
 #moreproj:hover{
