@@ -30,11 +30,11 @@ $(document).ready(function() {
     $("#proj1").css('left', 0 + ((scrolled - 1800) * 0.3) + 'px');
     $("#proj2").css('right', 0 + ((scrolled - 1800) * 0.3) + 'px');
     $("#proj3").css('left', 0 + ((scrolled - 2400) * 0.3) + 'px');
-  } else {
+    } else {
     $("#proj1").css('left', 0);
     $("#proj2").css('left', 0);
     $("#proj3").css('left', 0);
-  }
+    }
   }
 
   function skillfade() {
@@ -99,18 +99,11 @@ $(document).ready(function() {
       }
   }
 
-  $(window).scroll(function(){
-    skillfade();
-    parallax();
-    moveMoreProj();
-    displayMenu();
-  });
-
   function displaySkills() {
     $("#moreskill").click(function(){
       $("#add-skill").slideToggle("slow");
     })
-  };
+  }
 
   function displayMenu() {
     var scrolled = $(window).scrollTop();
@@ -124,11 +117,22 @@ $(document).ready(function() {
     }
   }
 
+  function pressKeyboardAction(){
+    
+  }
+
   jQuery(document).ready(function($) {
   	$(".scroll").click(function(event){
   		event.preventDefault();
   		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 750);
   	});
+  });
+
+  $(window).scroll(function(){
+    skillfade();
+    parallax();
+    moveMoreProj();
+    displayMenu();
   });
 
   moveName();

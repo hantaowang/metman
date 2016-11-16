@@ -253,21 +253,6 @@
 
 }(window.jQuery);
 
-function movePic() {
-    var elem = document.getElementById("mypic");
-    var pos = 300;
-    var id = setInterval(frame, 10);
-    $("#mypic").fadeIn(1000);
-    function frame() {
-        if (pos == 125) {
-            clearInterval(id);
-        } else {
-            pos--;
-            elem.style.top = pos + 'px';
-        }
-    }
-}
-
 $(function(){
     var items = ">>> self.school \nUC Berkeley"
     + "\nElectircal Engineering & Computer Science"
