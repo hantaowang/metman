@@ -25,6 +25,7 @@ $(document).ready(function() {
   };
 
   $(document).keydown(function(e) {
+      $("#" + e.which).css("transition", "0.1s");
       $("#" + e.which).css("background", "#ededed");
       $("#" + e.which).css("color", "#545454");
       if (e.which == 16){
@@ -37,6 +38,7 @@ $(document).ready(function() {
   });
 
   $(document).keyup(function() {
+      $(".key").css("transition", "1s");
       $(".key").css("background", "#545454");
       $(".key").css("color", "#ededed");
       jQuery.each(keybindings, function(key, value) {

@@ -1,3 +1,27 @@
+<?php
+$to = 'hantaowang97@gmail.com';
+$subject = 'This came from your mother';
+
+$name = $_POST['sender'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+$messagebody = <<<EMAIL
+
+$name
+$email
+$message
+
+EMAIL;
+
+$header = '$email';
+
+if($_POST){
+  mail($to, $subject, $messagebody, $header);
+  $feedback = 'Thanks for the worthless email';
+}
+?>
+
 <head>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
@@ -24,7 +48,7 @@
     <img src="assets/img/will.gif" alt="A Picture of Me" id="mypic-fake">
     <div id="links">
       <a target="_blank" href="assets/files/Resume.pdf"><img src="assets/img/pdf.png" alt="Resume" class="link" id="l1"></a>
-      <a target="_blank" href="mailto:hwang97@berkeley.edu"><img src="assets/img/mail.png" alt="SendEmail" class="link" id="l2"></a>
+      <a href="mailto:hwang97@berkeley.edu"><img src="assets/img/mail.png" alt="SendEmail" class="link" id="l2"></a>
       <a target="_blank" href="https://github.com/hantaowang"><img src="assets/img/github.png" alt="Github" class="link" id="l3"></a>
       <a target="_blank" href="http://stackoverflow.com/users/6357700/will-wang"><img src="assets/img/stack.png" alt="StackOverflow" class="link" id="l4"></a>
       <a target="_blank" href="https://www.linkedin.com/in/hantao-wang-711557130"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="link" id="l5"></a>
@@ -136,6 +160,25 @@
         </div>
       </div>
     <div id="screen"></div>
+    <div id="moreproj">More Projects</div>
+    <p id="feedback"><?php echo $feedback; ?></p>
+    <form action="?" method="post" id="form">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" name="sender" id="sender" />
+        </li>
+        <li>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" />
+        </li>
+        <li>
+          <label for="message">Message:</label>
+          <textarea id="message name="message cols="42" rows="9"></textarea>
+        </li>
+        <li><input type="submit" value="submit"></li>
+      </ul>
+    </form>
     <div id="keyboard">
       <div class="row">
         <div class="key" id="192">`</div>

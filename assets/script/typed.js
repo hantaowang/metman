@@ -255,7 +255,7 @@
 
 $(function(){
     var items = ">>> self.school \nUC Berkeley"
-    + "\nElectircal Engineering & Computer Science"
+    + "\nElectrical Engineering & Computer Science"
     + "\nClass of 2020"
     + "\n\n>>> self.interests"
     + "\nBasketball, Swimming, Eating, Puppies"

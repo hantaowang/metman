@@ -17,7 +17,8 @@ $(document).ready(function() {
 
   function moveMoreProj() {
       var scrolled = $(window).scrollTop();
-      if (scrolled > 2100) {
+      if (scrolled > 1400) {
+          $("#projects").fadeIn(2000);
           $("#moreproj").fadeIn(2000);
       }
   }
@@ -49,13 +50,13 @@ $(document).ready(function() {
     var elem = document.getElementById(name);
     var pos = 300;
     var id = setInterval(frame, 12);
-    $(".project").fadeIn(2000);
+    $("#projects").fadeIn(2000);
     function frame() {
         if (pos == 150) {
             clearInterval(id);
         } else {
             pos--;
-            elem.style.left = pos + 'px';
+            elem.style.top = pos + 'px';
         }
     }
   }
@@ -118,7 +119,7 @@ $(document).ready(function() {
   }
 
   function pressKeyboardAction(){
-    
+
   }
 
   jQuery(document).ready(function($) {

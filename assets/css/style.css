@@ -260,15 +260,16 @@ h1{
   font-family: 'Share Tech Mono', monospace;
   font-size: 32px;
   line-height: 250%;
-  transition: 1s;
   display: none;
   background: #545454;
   color: #ededed;
+  transition: 1s;
 }
 
 #moreskill:hover{
   background: #ededed;
   color: #545454;
+  cursor: pointer;
 }
 
 #project-title{
@@ -286,14 +287,14 @@ h1{
 #projects{
   position: relative;
   top: 200px;
-  width: 1000px;
+  width: 1200px;
   height: 850px;
   margin: 0 auto;
-  left: 5%;
+  left: 0;
   text-align: center;
   overflow: hidden;
   z-index: 20;
-
+  display: none;
 }
 
 .project{
@@ -301,34 +302,36 @@ h1{
   width: 450px;
   height: 400px;
   display: inline-block;
-  margin: 10px 20px;
+  margin: 10px 30px;
 }
 
 .proj-img{
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 #moreproj{
   height: 75px;
   width: 300px;
   position: relative;
-  top: 100px;
+  top: 250px;
+  left: 5%;
   margin: 0 auto;
   border-style: solid;
-  color: black;
   text-align: center;
   font-family: 'Share Tech Mono', monospace;
   font-size: 32px;
   line-height: 250%;
-  background-color: #a8a8a8;
+  background: #545454;
   display: none;
+  color: #ededed;
   transition: 1s;
-  left: 5%;
 }
 
 #moreproj:hover{
-  background-color: #ededed;
+  background: #ededed;
+  color: #545454;
+  cursor: pointer;
 }
 
 #screen{
@@ -416,6 +419,7 @@ h1{
   backface-visibility: hidden;
   overflow: hidden;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  max-height: 200px;
 }
 .face.back {
   display: block;
@@ -438,4 +442,11 @@ h1{
   line-height: 32px;
   width: 90%;
   margin: 0 auto;
+}
+
+#form{
+  position: absolute;
+  bottom: 700px;
+  left: 50%;
+  transform: translateX(-50%);
 }
