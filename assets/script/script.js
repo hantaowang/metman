@@ -18,8 +18,8 @@ $(document).ready(function() {
   function moveMoreProj() {
       var scrolled = $(window).scrollTop();
       if (scrolled > 1400) {
-          $("#projects").fadeIn(2000);
-          $("#moreproj").fadeIn(2000);
+          $("#projects").fadeIn(3000);
+          $("#moreproj").fadeIn(3000);
       }
   }
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
       var elem = document.getElementById("mypic");
       var pos = 300;
       var id = setInterval(frame, 10);
-      $("#mypic").fadeIn(1000);
+      $("#mypic").fadeIn(2000);
 
       function frame() {
           if (pos == 125) {
@@ -103,6 +103,11 @@ $(document).ready(function() {
   function displaySkills() {
     $("#moreskill").click(function(){
       $("#add-skill").slideToggle("slow");
+      if ($("body").css("height") == "3800px") {
+        $("body").css("height", "4300px");
+      } else {
+        $("body").css("height", "3800px");
+      }
     })
   }
 
@@ -111,7 +116,7 @@ $(document).ready(function() {
     var wide = $(window).width();
     if ((scrolled > 400) && (wide > 1300)) {
       $("#menu").fadeIn(1000);
-      $("#add-skill").css("left", "5%");
+      $("#add-skill").css("left", "0");
     } else {
       $("#menu").fadeOut(1000);
       $("#add-skill").css("left", 0);

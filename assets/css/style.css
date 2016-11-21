@@ -5,7 +5,7 @@ html{
 }
 
 body{
-  height: 5000px;
+  height: 3800px;
   background: #ededed;
   position: absolute;
   margin: 0 auto;
@@ -29,10 +29,10 @@ a{
 }
 
 .menu-item{
-  height: 25px;
+  height: 30px;
   margin-left: 20px;
   color: #a8a8a8;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: left;
 }
@@ -111,7 +111,7 @@ a{
 }
 
 .link:hover{
-  opacity: 0.5;
+  opacity: 0.35;
   cursor: pointer;
 }
 
@@ -157,7 +157,6 @@ a{
 #skills{
   width: 95%;
   position: relative;
-  left: 2%;
   top: 175px;
   margin: 0 auto;
   text-align: center;
@@ -224,7 +223,7 @@ h1{
 
 .skill-name{
   margin-top: 10px;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 32px;
   position: absolute;
   top: 200px;
@@ -244,7 +243,6 @@ h1{
   font-size: 80px;
   line-height: 500px;
   color: black;
-  left: 5%;
   border-style: solid;
 }
 
@@ -253,17 +251,16 @@ h1{
   width: 300px;
   position: relative;
   top: 250px;
-  left: 5%;
   margin: 0 auto;
   border-style: solid;
   text-align: center;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 32px;
   line-height: 250%;
   display: none;
   background: #545454;
   color: #ededed;
-  transition: 1s;
+  transition: 2s;
 }
 
 #moreskill:hover{
@@ -315,17 +312,16 @@ h1{
   width: 300px;
   position: relative;
   top: 250px;
-  left: 5%;
   margin: 0 auto;
   border-style: solid;
   text-align: center;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 32px;
   line-height: 250%;
-  background: #545454;
   display: none;
+  background: #545454;
   color: #ededed;
-  transition: 1s;
+  transition: 2s;
 }
 
 #moreproj:hover{
@@ -336,12 +332,12 @@ h1{
 
 #screen{
   position: absolute;
-  bottom: 300px;
+  bottom: 250px;
   left: 50%;
   transform: translateX(-50%);
   width: 900px;
   z-index: 0;
-  height: 400px;
+  height: 380px;
   background-color: #bdbdbd;
   border-radius: 50px;
 }
@@ -353,15 +349,15 @@ h1{
   transform: translateX(-50%);
   width: 900px;
   z-index: 0;
-  height: 300px;
+  height: 250px;
   background-color: #2a2a2a;
   border-radius: 75px 75px 0px 0px;
 }
 
 .row{
   position: relative;
-  top: 20px;
-  height: 50px;
+  top: 15px;
+  height: 40px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -373,12 +369,12 @@ h1{
   margin-left: 10px;
   z-index: 10;
   left: 20px;
-  height: 25px;
+  height: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   background: #545454;
   padding: 10px;
-  line-height: 27px;
+  line-height: 20px;
   border-radius: 10px;
   min-width: 25px;
   text-align: center;
@@ -444,9 +440,103 @@ h1{
   margin: 0 auto;
 }
 
-#form{
+#formarea{
   position: absolute;
-  bottom: 700px;
-  left: 50%;
+  bottom: 0;
+  left: 10%;
+  text-align: left;
+}
+
+.forminput{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 24px;
+  font-weight: 200;
+  background-color: #bdbdbd;
+  border: none;
+  border-bottom: solid black 1px;
+}
+
+.forminput:focus{
+  outline-width: 0;
+}
+
+.formtext{
+  position: relative;
+  left: 0;
+  margin-bottom: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#form2{
+  display: none;
+}
+
+#form3{
+  display: none;
+}
+
+#form4{
+  display: none;
+}
+
+#submitbutton{
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  left: 47%;
   transform: translateX(-50%);
+  border: 2px solid black;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  display: none;
+  margin-top: 5px;
+  transition: 1s;
+}
+
+#submitbutton:focus{
+  outline-width: 0;
+}
+
+#submitbutton:hover{
+  width: 150px;
+  cursor: pointer;
+}
+
+#contact-title{
+  position: absolute;
+  bottom: 220px;
+  width: 1000px;
+  height: 500px;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
+  animation: coolanimation 10s ease infinite;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 75px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@keyframes coolanimation {
+    0% {color: #FF0080;}
+    8.3% {color: #FF0000;}
+    16.6% {color: #FF8000;}
+    25% {color: #FFFF00;}
+    33.3% {color: #80FF00;}
+    41.6% {color: #00FF00;}
+    50.0% {color: #00FF80;}
+    58.3% {color: #00FFFF;}
+    66.6% {color: #0080FF;}
+    75.0% {color: #0000FF;}
+    83.3% {color: #8000FF;}
+    91.6% {color: #FF00FF;}
+    100.0% {color: #FF0080;}
 }

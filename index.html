@@ -1,6 +1,6 @@
 <head>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono: 200, 400, 700" rel="stylesheet">
   <script src="assets/script/jquery-1.9.1.js"></script>
   <script src="assets/script/script.js"></script>
   <script src="assets/script/typed.js"></script>
@@ -13,8 +13,7 @@
     <a href="#header" class="scroll"><div class="menu-item">Top</div></a>
     <a href="#skill-title" class="scroll"><div class="menu-item">Skills</div></a>
     <a href="#project-title" class="scroll"><div class="menu-item">Projects</div></a>
-    <a href="#experience" class="scroll"><div class="menu-item">Experience</div></a>
-    <a href="#screen" class="scroll"><div class="menu-item">Contact</div></a>
+    <a href="#contact-title" class="scroll"><div class="menu-item">Contact</div></a>
   </div>
 
   <div id="header">
@@ -30,7 +29,7 @@
       <a target="_blank" href="https://www.linkedin.com/in/hantao-wang-711557130"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="link" id="l5"></a>
     </div>
   </div>
-
+    <div id="background1"></div>
     <div id="skill-title"><font color="blue">from</font> life.py <font color="blue">import</font> skills</div>
     <div id="skills">
       <div class="skill">
@@ -135,8 +134,19 @@
           <div class="proj-desc">Personal website created as the Web Design Decal final project. Uses HTML, CSS, Jquery, and PHP.</div>
         </div>
       </div>
-    <div id="screen"></div>
-    <div id="moreproj">More Projects</div>
+      <div id="moreproj">More Projects</div>
+      <div id="contact-title">WRITE ME AN EMAIL</div>
+      <div id="screen">
+        <form action="https://formspree.io/hwang97@gmail.com" method="POST" id="formarea">
+          <div class="formtext" id="formtitle"> Press TAB for next line </div>
+          <div class="formtext" id="form1">Name: <input type="text" name="name" size="50px" maxlength="75" class="forminput" id="box1" placerholder="TAB for next line" required="required"></div>
+          <div class="formtext" id="form2">Email: <input type="text" name="email" size="49px" maxlength="75" class="forminput" id="box2" placerholder="TAB for next line" required="required"></div>
+          <div class="formtext" id="form3">Subject: <input type="text" name="subject" size="47px" maxlength="75" class="forminput" id="box3" placerholder="TAB for next line" required="required"></div>
+          <div class="formtext" id="form4"><div id="message-text">Message: </div><textarea type="text" name="message" rows="5" class="forminput" id="box4" cols="55"> </textarea></div>
+
+          <input type="submit" value="Send" id="submitbutton">
+        </form>
+      </div>
     <div id="keyboard">
       <div class="row">
         <div class="key" id="192">`</div>

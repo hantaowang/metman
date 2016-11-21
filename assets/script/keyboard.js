@@ -46,4 +46,32 @@ $(document).ready(function() {
       });
   });
 
+
+  $("#box1").focus(function() {
+    $(document).keydown(function(e) {
+      if (e.which == 9){
+        $("#form2").show();
+      }
+    })
+  });
+
+  $("#box2").focus(function() {
+    $(document).keydown(function(e) {
+      if (e.which == 9){
+        $("#form3").show();
+      }
+    })
+  });
+
+  $("#box3").focus(function() {
+    $(document).keydown(function(e) {
+      if (e.which == 9){
+        $("#form4").show();
+        $("#submitbutton").show();
+        $("#formtitle").hide();
+      }
+    })
+  });
+
+
 })
