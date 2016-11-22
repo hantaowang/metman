@@ -5,7 +5,7 @@ html{
 }
 
 body{
-  height: 3800px;
+  height: 3900px;
   background: #ededed;
   position: absolute;
   margin: 0 auto;
@@ -272,7 +272,7 @@ h1{
 #project-title{
   position: relative;
   left: 15%;
-  top: 300px;
+  top: 500px;
   font-family: 'Share Tech Mono', monospace;
   font-size: 45px;
   height: 300px;
@@ -283,7 +283,7 @@ h1{
 
 #projects{
   position: relative;
-  top: 200px;
+  top: 250px;
   width: 1200px;
   height: 850px;
   margin: 0 auto;
@@ -311,7 +311,7 @@ h1{
   height: 75px;
   width: 300px;
   position: relative;
-  top: 250px;
+  top: 275px;
   margin: 0 auto;
   border-style: solid;
   text-align: center;

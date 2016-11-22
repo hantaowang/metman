@@ -104,9 +104,9 @@ $(document).ready(function() {
     $("#moreskill").click(function(){
       $("#add-skill").slideToggle("slow");
       if ($("body").css("height") == "3800px") {
-        $("body").css("height", "4300px");
+        $("body").css("height", "4400px");
       } else {
-        $("body").css("height", "3800px");
+        $("body").css("height", "3900px");
       }
     })
   }
