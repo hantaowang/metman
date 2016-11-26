@@ -3,10 +3,10 @@ $(document).ready(function() {
   function moveName() {
       var elem = document.getElementById("name");
       var pos = 0;
-      var id = setInterval(frame, 14);
+      var id = setInterval(frame, 20);
       $("#name").fadeIn(2000);
       function frame() {
-          if (pos == 125) {
+          if (pos == 75) {
               clearInterval(id);
           } else {
               pos++;
@@ -63,12 +63,12 @@ $(document).ready(function() {
 
   function movePic() {
       var elem = document.getElementById("mypic");
-      var pos = 300;
-      var id = setInterval(frame, 10);
+      var pos = 150;
+      var id = setInterval(frame, 20);
       $("#mypic").fadeIn(2000);
 
       function frame() {
-          if (pos == 125) {
+          if (pos == 75) {
               clearInterval(id);
               $("#mypic").hover(function(){
                 $("#mypic").css('opacity', 0);
