@@ -1,0 +1,56 @@
+<head>
+  <title>PyCalc</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/pycalc.css">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono: 200, 400, 700" rel="stylesheet">
+  <script src="assets/script/jquery-1.9.1.js"></script>
+  <script src="assets/script/script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <div id="page">
+    <div id="title">pyCalc</div>
+    <div id="subtitle">A simple graphing calculator built on Python</div>
+    <div id="line"></div>
+    <div id="textbox1">As my first side project, I created a program that computes mathematical expressions and draw functions, much like a graphing calculator can.</div>
+    <div id="textbox2">It works by using a Read-Evaluate-Print Loop (REPL) that reads the user input and parse it into tokens, which represent objects to be evaluated.
+      The tokens are sorted into a tree based on the order of operations. The tree is then evaluated by recursively evaluating the branches first. The final output is
+      printed by the program and the whole process is restarted.</div>
+    <div id="textbox3">WHAT</div>
+    <div id="textbox4">HOW</div>
+    <div id="textbox5">WHERE</div>
+    <div id="textbox6">You can view the code on <b><a target="_blank" href="https://github.com/hantaowang/pycalc">
+  Github</a></b>, or try it below! Simply go to the textbox at the bottom of the application and type where it says&emsp;<font face="Share Tech Mono">Enter an expression or equation:</font></div>
+    <div id="textbox7">NOTE: Unfortunatly, because of the limitations of trinket.io's (the embedded python shell) low computational power, graphing functions take much much longer. More complex functions might actually cause Trinket.io to
+      timeout and crash the program. In addition, Trinket.io also does not support exception handeling or complex numbers. Try downloading pyCalc for youself to test out a wider range of inputs.</div>
+      <div id="textbox13">Test pyCalc out for yourself! <br>Try typing in "5 + (6 - 2) ^ 3" or "f(x)= x^2 - 3"<br>Type "clear" to clear the graph.<br>If an error occurs, reload the page.</div>
+      <img src="assets/img/help.png" id="help">
+      <img src="assets/img/note.png" id="note">
+    <img src="assets/img/repl.png" id="replimg">
+    <iframe src="https://trinket.io/embed/python/4170f72789?outputOnly=true&runOption=run&start=result" width="750px" height="700" frameborder="0" marginwidth="0" id="trinket" marginheight="0" allowfullscreen></iframe>
+    <div id="textbox8">SPECIAL CASES</div>
+    <div id="textbox9">pyCalc supports some special functions. Three major ones are listed below. Try them out youself!</div>
+    <div id="functions">
+      <div class="function">
+        <div class="fun-title">Implicit Multiplication</div>
+        <div class="info">In mathematical syntax, we often do what is called multicplication by juxtaposition aka implicit multicplication, such as <b>5x</b> or <b>5(4)</b>.
+          The proximity of the two numbers imply mulitplication. <br><br>Try this:</div>
+        <div class="tryit">5(4)<br>f(x) = 3x</div>
+      </div>
+      <div class="function">
+        <div class="fun-title">Symbols</div>
+        <div class="info">Some constants are just too long to write out. pyCalc supports substituting these numbers for symbols. Currently <b>pi</b> and euler's constant <b>e</b> are supported, but more can be added at any time.<br><br>Try this:</div>
+        <div class="tryit">pi(4^2)<br>f(x) = e^x</div>
+      </div>
+      <div class="function">
+        <div class="fun-title">Complex Numbers</div>
+        <div class="info">While the browser implemention cannot support complex numbers, pyCalc actually can! They are reprenseted using the form <b>a + bj</b> where <b>a</b> is the real number and <b>b</b> is the imaginary number. <br><br>Try this:</div>
+        <div class="tryit">(-5)^(0.5)<br>f(x) = (9-x^2)^0.5</div>
+      </div>
+    </div>
+    <div id="textbox10"> View this project on</div>
+    <a target="_blank" href="https://github.com/hantaowang/pycalc"><img src="assets/img/github_logo.png" id="githubimg"></a>
+    <a target="_blank" href="index.html"><div id="textbox11">HOME</div></a>
+    <a target="_blank" href="projects.html"><div id="textbox12"> PROJECTS</div></a>
+  </div>
+</body>

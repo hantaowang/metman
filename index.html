@@ -2,49 +2,166 @@
   <title>Will Wang</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono: 200, 400, 700" rel="stylesheet">
+  <link href='assets/css/onepage-scroll.css' rel='stylesheet' type='text/css'>
   <script src="assets/script/jquery-1.9.1.js"></script>
   <script src="assets/script/script.js"></script>
+  <script type="text/javascript" src="assets/script/jquery.onepage-scroll.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <script>
+    $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+    });
+  </script>
 </head>
 
 <body>
-  <div id="landing">
-    <div id="name">Will Wang</div>
-    <img src="assets/img/will.png" id="me_img">
-    <div id="about">I am a <a href="https://xkcd.com/557/" target="_blank">freshman</a> @ UC Berkeley<br>
-                    I am studying <a href="https://xkcd.com/670/" target="_blank">Mechanical Engineering</a><br>
-                    I was born in Shanghai, China<br>
-                    I live in Los Angeles now, sometimes<br>
-                    I write <a href="https://github.com/hantaowang" target="_blank">code</a> and (pretend to) build stuff when I am bored<br>
-                    I helped build <a href="http://www.gulfstream.com/" target="_blank">airplanes</a> for Gulfstream<br>
-                    I don't anymore, so I need a new job<br>
-                    I read my <a href="mailto:hwang97@berkeley.edu">emails</a> constantly ~ write me one<br>
-                    I have a <a href="assets/files/resume.pdf" target="_blank">resume</a>, if you're into that
-    </div>
-    <div id="speech">Hi</div>
-  </div>
-  <div id="part2">
-    <div id="part2title">Skills</div>
-    <div id="skills">
-      <div class="skill-table">
-        <div class="skill">&emsp;Python<div class="bar" id="spython"></div></div>
-        <div class="skill">&emsp;Java<div class="bar" id="sjava"> In Progress</div></div>
-        <div class="skill">&emsp;C<div class="bar" id="sc"> Planned</div></div>
-        <div class="skill">&emsp;HTML/CSS<div class="bar" id="shtml"></div></div>
-        <div class="skill">&emsp;Javascript<div class="bar" id="sscript"></div></div>
-        <div class="skill">&emsp;Ruby<div class="bar" id="sruby"> In Progress</div></div>
-        <div class="skill">&emsp;Rails<div class="bar" id="srails"> Planned</div></div>
+  <div class="main">
+    <section id="landing">
+      <div id="name">Will Wang</div>
+      <img src="assets/img/will.png" id="me_img">
+      <div id="about">I am a <a href="https://xkcd.com/557/" target="_blank">freshman</a> @ UC Berkeley<br>
+                      I am studying <a href="https://xkcd.com/670/" target="_blank">Mechanical Engineering</a><br>
+                      I was born in Shanghai, China<br>
+                      I live in Los Angeles now, sometimes<br>
+                      I write <a href="https://github.com/hantaowang" target="_blank">code</a> and (pretend to) build stuff when I am bored<br>
+                      I helped build <a href="http://www.gulfstream.com/" target="_blank">airplanes</a> for Gulfstream<br>
+                      I don't anymore, so I need a new <a href="https://www.linkedin.com/in/hantao-wang-711557130" target="_blank">job</a><br>
+                      I read my <a href="mailto:hwang97@berkeley.edu">emails</a> constantly ~ write me one<br>
+                      I have a <a href="assets/files/resume.pdf" target="_blank">resume</a>, if you're into that
       </div>
-      <div class="skill-table">
-        <div class="skill">&emsp;Swift<div class="bar" id="sswift"> Planned</div></div>
-        <div class="skill">&emsp;AutoCAD<div class="bar" id="sautocad"></div></div>
-        <div class="skill">&emsp;SolidWorks<div class="bar" id="ssolid"> In Progess</div></div>
-        <div class="skill">&emsp;Photoshop<div class="bar" id="sphoto"> Planned</div></div>
-        <div class="skill">&emsp;Illustrator<div class="bar" id="sillu"> Planned</div></div>
-        <div class="skill">&emsp;Final Cut Pro<div class="bar" id="sfinal"></div></div>
-        <div class="skill">&emsp;MS Office<div class="bar" id="soffice"></div></div>
+    </section>
+    <section id="part2">
+      <div id="part2title">Skills</div>
+      <div id="skills">
+        <div class="skill-table">
+          <div class="skill">&emsp;Python<div class="bar">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+          </div></div>
+          <div class="skill">&emsp;Java<div class="bar"> In Progress</div></div>
+          <div class="skill">&emsp;C<div class="bar"> Planned</div></div>
+          <div class="skill">&emsp;HTML/CSS<div class="bar">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+          </div></div>
+          <div class="skill">&emsp;Javascript<div class="bar">
+            <img src="assets/img/starg.png" class="star">
+            <img src="assets/img/starg.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+          </div></div>
+          <div class="skill">&emsp;Ruby<div class="bar"> In Progress</div></div>
+          <div class="skill">&emsp;Rails<div class="bar"> Planned</div></div>
+        </div>
+        <div class="skill-table">
+          <div class="skill">&emsp;Scheme<div class="bar">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+          </div></div>
+          <div class="skill">&emsp;AutoCAD<div class="bar">
+            <img src="assets/img/starg.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+          </div></div>
+          <div class="skill">&emsp;SolidWorks<div class="bar"> In Progess</div></div>
+          <div class="skill">&emsp;Photoshop<div class="bar"> Planned</div></div>
+          <div class="skill">&emsp;Illustrator<div class="bar"> Planned</div></div>
+          <div class="skill">&emsp;Final Cut Pro<div class="bar">
+            <img src="assets/img/starg.png" class="star">
+            <img src="assets/img/starg.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+          </div></div>
+          <div class="skill">&emsp;MS Office<div class="bar">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+            <img src="assets/img/starb.png" class="star">
+          </div></div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section id="part3">
+      <div id="part3title">Projects</div>
+      <div id="projects">
+        <div class="projrow">
+          <a href="https://github.com/hantaowang/hantaowang.github.io" target="_blank">
+          <div class="projitem" id="p1">
+            <div class="overlay" id="o1">
+              <div class="overlay-title">My Website</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">Personal website written with HTML, CSS, and Javscript. </div>
+            </div>
+            <img src="assets/img/website.png" class="proj_img" id="i1">
+          </div></a>
+          <a href="pycalc.html" target="_blank">
+          <div class="projitem" id="p2">
+            <div class="overlay" id="o2">
+              <div class="overlay-title">pyCalc</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">Python based graphing calculator that reads, evaluates, and graphs user input. Emphasizes Read-Print-Evalv Loops (REPL) and Tree Objects.</div>
+            </div>
+            <img src="assets/img/calc.png" class="proj_img" id="i2">
+          </div></a>
+          <div class="projitem" id="p3">
+            <div class="overlay" id="o3">
+              <div class="overlay-title">Reddit Bot</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">Reddit bot built on Python that uses Reddit API to complete functions to be defined</div>
+            </div>
+            <img src="assets/img/reddit.png" class="proj_img" id="i3">
+          </div>
+        </div>
+        <div class="projrow">
+          <a href="https://github.com/hantaowang/schemeinterpreter" target="_blank">
+          <div class="projitem" id="p4">
+            <div class="overlay" id="o4">
+              <div class="overlay-title">Interpreter</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">Interactive interpretor that reads and exceutes user input in Scheme, a dialect of Lisp. Focuses on OOP, keeps track of environemnts, and is written in Python. </div>
+            </div>
+            <img src="assets/img/scheme.png" class="proj_img" id="i4">
+          </div></a>
+          <a href="assets/files/servoredesign.pdf" target="_blank">
+          <div class="projitem" id="p5">
+            <div class="overlay" id="o5">
+              <div class="overlay-title">Servo Motor</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">With my engineering team, redesigned a servo motor to have two orthogonal arms. Design results were formally drawn with AutoCAD.</div>
+            </div>
+            <img src="assets/img/servo.png" class="proj_img" id="i5">
+          </div></a>
+          <div class="projitem" id="p6">
+            <div class="overlay" id="o6">
+              <div class="overlay-title">What's Next?</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">Have an idea for my next project? Write me an email! Or maybe offer me an interview ;)</div>
+            </div>
+            <img src="assets/img/next.png" class="proj_img" id="i6">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part4">
+      <div id="part2title">Contact</div>
+    </section>
   </div>
-  <div id="part3"></div>
 </body>
