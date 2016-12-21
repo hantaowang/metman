@@ -197,7 +197,7 @@ a{
 .overlay-title{
   color: #3ABEFF;
   font-family: 'Raleway', sans-serif;
-  font-size: 28pt;
+  font-size: 5vh;
   text-align: left;
   position: relative;
   top: 5%;
@@ -217,13 +217,13 @@ a{
 .overlay-text{
   color: #3ABEFF;
   font-family: 'Raleway', sans-serif;
-  font-size: 14pt;
+  font-size: 2.5vh;
   text-align: left;
   position: relative;
   top: 12%;
   right: -275px;
-  width: 250px;
-  height: 125px;
+  width: 18vw;
+  height: 10vh;
   transition: 0.35s;
 }
 
