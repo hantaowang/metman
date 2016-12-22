@@ -36,6 +36,42 @@ $(document).ready(function(){
     $("#o6").fadeOut(350);
   });
 
+  $("#p7").hover(function(){
+    $("#o7").fadeIn(350);
+  }, function(){
+    $("#o7").fadeOut(350);
+  });
+
+  $("#p8").hover(function(){
+    $("#o8").fadeIn(350);
+  }, function(){
+    $("#o8").fadeOut(350);
+  });
+
+  $("#p9").hover(function(){
+    $("#o9").fadeIn(350);
+  }, function(){
+    $("#o9").fadeOut(350);
+  });
+
+  $("#p10").hover(function(){
+    $("#o10").fadeIn(350);
+  }, function(){
+    $("#o10").fadeOut(350);
+  });
+
+  $("#p11").hover(function(){
+    $("#o11").fadeIn(350);
+  }, function(){
+    $("#o11").fadeOut(350);
+  });
+
+  $("#p12").hover(function(){
+    $("#o12").fadeIn(350);
+  }, function(){
+    $("#o12").fadeOut(350);
+  });
+
   $(".projitem").hover(function(){
     $(".overlay-bar").css("width","250px");
     $(".overlay-text").css("right","-15px");
@@ -55,4 +91,31 @@ $(document).ready(function(){
   }, function(){
     $("#textbox7").fadeOut(350);
   });
+
+  $("#link1").click(function(){
+    $("#mo1").fadeIn(350);
+  });
+
+  $("#link2").click(function(){
+    $("#mo2").fadeIn(350);
+  });
+
+  $(".mainoverlay").click(function(){
+    $(".mainoverlay").fadeOut(350);
+    $("#main").enable();
+  });
+
+  $("#link3").click(function(){
+    $("#mo3").fadeIn(350);
+    $("#main").disable();
+  });
+
+  var imagesArray = ["assets/img/dilbert/d1.jpg", "assets/img/dilbert/d2.gif", "assets/img/dilbert/d3.gif", "assets/img/dilbert/d4.gif", "assets/img/dilbert/d5.gif"];
+  var localArray = []
+  $("#button").click(function(){
+    $("#mo4").fadeIn(350);
+    var num = Math.floor(Math.random() * 5);
+    document.canvas.src = imagesArray[num];
+  });
+
 });
