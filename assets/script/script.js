@@ -118,4 +118,27 @@ $(document).ready(function(){
     document.canvas.src = imagesArray[num];
   });
 
+  var text = ["Welcome", "Sup.", "Alola", "Greetings", "01101000 01100101 01101100 <br>01101100 01101111 ", "Hello"];
+  var counter = 0;
+  var elem = document.getElementById("part5title");
+  setInterval(change, 3000);
+  function change() {
+  $("#part5title").fadeOut(350);
+    window.setTimeout(partB,1000);
+  };
+  function partB(){
+    var elem = document.getElementById("part5title");
+    elem.innerHTML = text[counter];
+       counter++;
+       if(counter >= text.length) { counter = 0; }
+       if(counter == 5) {
+         $("#part5title").css("line-height", "12.5vh");
+         $("#part5title").css("letter-spacing", "0px");
+       } else {
+         $("#part5title").css("line-height", "25vh");
+         $("#part5title").css("letter-spacing", "15px");
+       };
+   $("#part5title").fadeIn(350);
+ };
+
 });
