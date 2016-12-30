@@ -64,7 +64,6 @@ a{
   position: absolute;
   top: calc(10vh + 10vw);
   left: 14%;
-  text-align: center;
   border: 4px solid #fafafa;
   user-select: none;
 }
@@ -272,10 +271,10 @@ a{
   transform: translateX(-50%);
   font-family: 'Raleway', sans-serif;
   color: #fafafa;
-  font-size: 3vh;
+  font-size: calc(2vh + 1vw);
   width: 70%;
   text-align: center;
-  line-height: 6vh;
+  line-height: calc(3vh + 3vw);
   transition: 1s;
 }
 

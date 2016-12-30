@@ -118,7 +118,7 @@ $(document).ready(function(){
     document.canvas.src = imagesArray[num];
   });
 
-  var text = ["Welcome", "Sup.", "Alola", "Greetings", "01101000 01100101 01101100 <br>01101100 01101111 ", "Hello"];
+  var text = ["Welcome", "Sup.", "Alola", "Greetings", "Hello"];
   var counter = 0;
   var elem = document.getElementById("part5title");
   setInterval(change, 3000);
@@ -146,10 +146,12 @@ $(document).ready(function(){
      $(".skill").css("width", "70vw");
      $(".skill").css("height", "calc(2.5vh + 2vw)");
      $(".skill").css("line-height", "calc(2.5vh + 2vw)");
+     $("#skills").css("left", "10%");
   } else {
      $(".skill").css("width", "35vw");
      $(".skill").css("height", "calc(2vh + 2vw)");
      $(".skill").css("line-height", "calc(2.5vh + 2vw)");
+     $("#skills").css("left", "14%");
   }
   };
 
