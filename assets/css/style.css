@@ -15,9 +15,9 @@ body{
 #name{
   font-family: 'Raleway', sans-serif;
   color: white;
-  font-size: 20vh;
+  font-size: calc(10vh + 5vw);
   position: absolute;
-  top: 9%;
+  top: 5%;
   left: 5%;
   z-index: 0;
 }
@@ -37,7 +37,7 @@ body{
   left: 10vw;
   font-family: 'Raleway', sans-serif;
   color: white;
-  font-size: 3vh;
+  font-size: calc(1vw + 1vh);
   line-height: 6vh;
   z-index: 0;
 }
@@ -62,7 +62,7 @@ a{
 
 #skills{
   position: absolute;
-  top: 26vh;
+  top: calc(10vh + 10vw);
   left: 14%;
   text-align: center;
   border: 4px solid #fafafa;
@@ -72,19 +72,23 @@ a{
 .skill-table{
   position: relative;
   float: left;
+  overflow: hidden;
 }
 
 .skill{
   position: relative;
-  height: 8vh;
+  height: calc(2vh + 2vw);
   width: 35vw;
   border: 4px solid #fafafa;
   font-family: 'Raleway', sans-serif;
-  font-size: 4vh;
+  font-size: calc(2vh + 1vw);
   text-align: left;
-  line-height: 8vh;
+  line-height: calc(2vh + 2vw);
   color: #3ABEFF;
   background-color: #fafafa;
+  min-width: 200px;
+  overflow: hidden;
+
 }
 
 .skill:hover{
@@ -94,13 +98,13 @@ a{
 .bar{
   position: absolute;
   right: 5%;
-  height: 80%;
-  top: 10%;
-  width: 15vw;
-  line-height: 6vh;
+  height: 100%;
+  top: 0;
+  width: 20vw;
+  line-height: calc(3vh + 2vw);
   text-align: right;
   color: #bdbdbd;
-  font-size: 3.5vh;
+  font-size: calc(1.5vh + 1vw);
 }
 
 #part2title{
@@ -110,8 +114,8 @@ a{
   transform: translateX(-50%);
   font-family: 'Raleway', sans-serif;
   color: #3ABEFF;
-  font-size: 10vh;
-  letter-spacing: 15px;
+  font-size: calc(5vh + 3vw);
+  letter-spacing: 2vw;
   border-bottom: 3px solid #e9e9e9;
   width: 40%;
   text-align: center;
@@ -122,7 +126,7 @@ a{
   position: relative;
   right: 0;
   margin-left: 5%;
-  height: 50%;
+  height: calc(1vh + 1vw);
   top: 50%;
   transform: translateY(-60%);
 }
@@ -144,7 +148,7 @@ a{
   transform: translateX(-50%);
   font-family: 'Raleway', sans-serif;
   color: #fafafa;
-  font-size: 10vh;
+  font-size: calc(5vh + 3vw);
   letter-spacing: 5px;
   width: 80%;
   text-align: center;
@@ -255,7 +259,7 @@ a{
   transform: translateX(-50%);
   font-family: 'Raleway', sans-serif;
   color: #3ABEFF;
-  font-size: 10vh;
+  font-size: calc(5vh + 3vw);
   letter-spacing: 5px;
   width: 80%;
   text-align: center;
@@ -282,7 +286,7 @@ a{
   transform: translateX(-50%);
   font-family: 'Raleway', sans-serif;
   color: #fafafa;
-  font-size: 10vh;
+  font-size: calc(5vh + 3vw);
   letter-spacing: 15px;
   width: 100%;
   height: 25vh;

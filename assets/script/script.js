@@ -141,4 +141,21 @@ $(document).ready(function(){
    $("#part5title").fadeIn(350);
  };
 
+ function windowresize(){
+   if ($(window).width() < 775)  {
+     $(".skill").css("width", "70vw");
+     $(".skill").css("height", "calc(2.5vh + 2vw)");
+     $(".skill").css("line-height", "calc(2.5vh + 2vw)");
+  } else {
+     $(".skill").css("width", "35vw");
+     $(".skill").css("height", "calc(2vh + 2vw)");
+     $(".skill").css("line-height", "calc(2.5vh + 2vw)");
+  }
+  };
+
+  windowresize()
+ $(window).resize(function() {
+   windowresize()
+ });
+
 });
