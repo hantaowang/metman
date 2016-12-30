@@ -274,7 +274,7 @@ a{
   font-size: calc(2vh + 1vw);
   width: 70%;
   text-align: center;
-  line-height: calc(3vh + 3vw);
+  line-height: calc(3vh + 2vw);
   transition: 1s;
 }
 

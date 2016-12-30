@@ -147,11 +147,21 @@ $(document).ready(function(){
      $(".skill").css("height", "calc(2.5vh + 2vw)");
      $(".skill").css("line-height", "calc(2.5vh + 2vw)");
      $("#skills").css("left", "10%");
+     $(".main").onepage_scroll({
+       sectionContainer: "section",
+       responsiveFallback: true,
+       loop: true
+     });
   } else {
      $(".skill").css("width", "35vw");
      $(".skill").css("height", "calc(2vh + 2vw)");
      $(".skill").css("line-height", "calc(2.5vh + 2vw)");
      $("#skills").css("left", "14%");
+     $(".main").onepage_scroll({
+       sectionContainer: "section",
+       responsiveFallback: false,
+       loop: true
+     });
   }
   };
 
