@@ -239,6 +239,7 @@ a{
   top: 400vh;
   left: 0;
   overflow: hidden;
+  color: #fafafa;
 }
 
 #part4{
@@ -249,6 +250,7 @@ a{
   top: 300vh;
   left: 0;
   overflow: hidden;
+  color: #3abeff;
 }
 
 #part4title{
@@ -264,13 +266,12 @@ a{
   text-align: center;
 }
 
-#partsubtite{
+.partsubtite{
   position: absolute;
   top: 25vh;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Raleway', sans-serif;
-  color: #fafafa;
   font-size: calc(2vh + 1vw);
   width: 70%;
   text-align: center;
@@ -328,6 +329,12 @@ a{
 }
 
 #link3{
+  color: yellow;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#link4{
   color: yellow;
   display: inline-block;
   cursor: pointer;

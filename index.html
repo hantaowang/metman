@@ -8,6 +8,7 @@
   <script src="assets/script/script.js"></script>
   <script src="assets/script/jquery.onepage-scroll.js"></script>
   <script type="text/javascript" src="assets/script/jquery.onepage-scroll.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 
@@ -20,7 +21,7 @@
                       I am studying <div id="link2">Mechanical Engineering</div><br>
                       I was born in Shanghai, China<br>
                       I live in Los Angeles now, sometimes<br>
-                      I write <a href="https://github.com/hantaowang" target="_blank">code</a> and (pretend to) <a href="assets/files/servoredesign.pdf" target="_blank">build</a> stuff when I am bored<br>
+                      I write <a href="https://github.com/hantaowang" target="_blank">code</a> and (pretend to) <div id="link4">build</div> stuff when I am bored<br>
                       I helped build <a href="http://www.gulfstream.com/" target="_blank">airplanes</a> for Gulfstream<br>
                       I don't anymore, so I need a new <a href="https://www.linkedin.com/in/hantao-wang-711557130" target="_blank">job</a><br>
                       I read my <a href="mailto:hwang97@berkeley.edu">emails</a> constantly ~ write me one<br>
@@ -32,7 +33,10 @@
           <object data="assets/files/resume.pdf" type="application/pdf" width="60%" height="80%"></object>
           <div class="overlaytitle">Click Here to Close</div>
       </div>
-
+      <div class="mainoverlay" id="mo4">
+          <object data="assets/files/servoredesign.pdf" type="application/pdf" width="60%" height="80%"></object>
+          <div class="overlaytitle">Click Here to Close</div>
+      </div>
     </section>
     <section id="part2">
       <div id="part2title">Skills</div>
@@ -106,7 +110,7 @@
       </div>
     </section>
     <section id="part3">
-      <div id="part3title">Class Projects</div>
+      <div id="part3title">Projects</div>
       <div id="projects">
         <div class="projrow">
           <a href="https://github.com/hantaowang/schemeinterpreter" target="_blank">
@@ -116,118 +120,66 @@
               <div class="overlay-bar"></div>
               <div class="overlay-text">Interactive interpretor that reads and exceutes user input in Scheme, a dialect of Lisp. Focuses on OOP, keeps track of environemnts, and is written in Python. </div>
             </div>
-            <img src="assets/img/scheme.png" class="proj_img" id="i4">
+            <img src="assets/img/scheme.png" class="proj_img" id="i1">
           </div></a>
-          <a href="assets/files/servoredesign.pdf" target="_blank">
+          <a href="https://github.com/hantaowang/hantaowang.github.io" target="_blank">
           <div class="projitem" id="p2">
             <div class="overlay" id="o2">
-              <div class="overlay-title">Servo Motor</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">With my engineering team, redesigned a servo motor to have two orthogonal arms. Design results were formally drawn with AutoCAD.</div>
-            </div>
-            <img src="assets/img/servo.png" class="proj_img" id="i5">
-          </div></a>
-          <div class="projitem" id="p3">
-            <div class="overlay" id="o3">
-              <div class="overlay-title">TBD</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Class project to be completed in Spring 2017</div>
-            </div>
-            <img src="assets/img/next.png" class="proj_img" id="i6">
-          </div>
-        </div>
-        <div class="projrow">
-          <div class="projitem" id="p4">
-            <div class="overlay" id="o4">
-              <div class="overlay-title">TBD</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Class project to be completed in Spring 2017</div>
-            </div>
-            <img src="assets/img/next.png" class="proj_img" id="i6">
-          </div>
-          <div class="projitem" id="p5">
-            <div class="overlay" id="o5">
-              <div class="overlay-title">TBD</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Class project to be completed in Fall 2017</div>
-            </div>
-            <img src="assets/img/next.png" class="proj_img" id="i6">
-          </div>
-          <div class="projitem" id="p6">
-            <div class="overlay" id="o6">
-              <div class="overlay-title">TBD</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Class project to be completed in Fall 2017</div>
-            </div>
-            <img src="assets/img/next.png" class="proj_img" id="i6">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="part4">
-      <div id="part4title">Personal Projects</div>
-      <div id="projects">
-        <div class="projrow">
-          <a href="https://github.com/hantaowang/hantaowang.github.io" target="_blank">
-          <div class="projitem" id="p7">
-            <div class="overlay" id="o7">
               <div class="overlay-title">My Website</div>
               <div class="overlay-bar"></div>
               <div class="overlay-text">Personal website written with HTML, CSS, and Javscript. </div>
             </div>
-            <img src="assets/img/website.png" class="proj_img" id="i1">
+            <img src="assets/img/website.png" class="proj_img" id="i2">
           </div></a>
           <a href="pycalc.html" target="_blank">
-          <div class="projitem" id="p8">
-            <div class="overlay" id="o8">
+          <div class="projitem" id="p3">
+            <div class="overlay" id="o3">
               <div class="overlay-title">pyCalc</div>
               <div class="overlay-bar"></div>
               <div class="overlay-text">Python based graphing calculator that reads, evaluates, and graphs user input. Emphasizes Read-Print-Evalv Loops (REPL) and Tree Objects.</div>
             </div>
-            <img src="assets/img/calc.png" class="proj_img" id="i2">
+            <img src="assets/img/calc.png" class="proj_img" id="i3">
           </div></a>
-          <div class="projitem" id="p9">
-            <div class="overlay" id="o9">
+        </div>
+        <div class="projrow">
+          <div class="projitem" id="p4">
+            <div class="overlay" id="o4">
               <div class="overlay-title">Reddit Bot</div>
               <div class="overlay-bar"></div>
               <div class="overlay-text">Reddit bot built on Python that uses Reddit API to complete functions to be defined</div>
             </div>
-            <img src="assets/img/reddit.png" class="proj_img" id="i3">
+            <img src="assets/img/reddit.png" class="proj_img" id="i4">
           </div>
+          <div class="projitem" id="p5">
+            <div class="overlay" id="o5">
+              <div class="overlay-title">Ruby Blackjack</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">Object orientated blackjack game written in Ruby and run from the command line, complete with a simple AI dealer. Implementation allows for card counting.</div>
+            </div>
+            <img src="assets/img/blackjack.png" class="proj_img" id="i5">
+          </div>
+          <a href="projects.html" target="_blank">
+          <div class="projitem" id="p6">
+            <div class="overlay" id="o6">
+              <div class="overlay-title">More Projects</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">These are just some of my projects. Check out all of them here!</div>
+            </div>
+            <img src="assets/img/more.png" class="proj_img" id="i6">
+          </div></a>
         </div>
-        <div class="projrow">
-          <div class="projitem" id="p10">
-            <div class="overlay" id="o10">
-              <div class="overlay-title">What's Next?</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Have an idea for my next project? Write me an email! Or maybe offer me an interview ;)</div>
-            </div>
-            <img src="assets/img/nextb.png" class="proj_img" id="i6">
-          </div>
-          <div class="projitem" id="p11">
-            <div class="overlay" id="o11">
-              <div class="overlay-title">What's Next?</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Have an idea for my next project? Write me an email! Or maybe offer me an interview ;)</div>
-            </div>
-            <img src="assets/img/nextb.png" class="proj_img" id="i6">
-          </div>
-          <div class="projitem" id="p12">
-            <div class="overlay" id="o12">
-              <div class="overlay-title">What's Next?</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Have an idea for my next project? Write me an email! Or maybe offer me an interview ;)</div>
-            </div>
-            <img src="assets/img/nextb.png" class="proj_img" id="i6">
-          </div>
-        </div>
+      </div>
+    </section>
+    <section id="part4">
+      <div id="part4title">Experience</div>
+      <div class="partsubtite">Under Construction</div>
     </section>
     <section id="part5">
       <div id="part5title">Hello</div>
-      <div id="partsubtite">I am currently looking for a computer science related internship position, paid or unpaid, during Summer 2017.
+      <div class="partsubtite">I am currently looking for a computer science related internship position, paid or unpaid, during Summer 2017.
         I am willing to relocated outside of the Los Angeles area, but if so, would prefer basic living expenses to be covered.
-        By then, I will have mastered all "In Progress" skills.<br><br>
-        Please contact me by <a href="mailto:hwang97@berkeley.edu">email</a>. <br>Check out my <a href="https://www.linkedin.com/in/hantao-wang-711557130" target="_blank">LinkedIn</a> and <a href="https://github.com/hantaowang" target="_blank">Github</a>!
+        By then, I will have mastered all In Progress skills.<br><br>
+        Please contact me by <a href="mailto:hwang97@berkeley.edu">email</a>. <br>Check out my <a href="https://www.linkedin.com/in/hantao-wang-711557130" target="_blank">LinkedIn</a> and <a href="https://github.com/hantaowang" target="_blank">Github</a>
       </div>
     </section>
   </div>

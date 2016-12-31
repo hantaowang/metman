@@ -2,8 +2,23 @@
   <title>PyCalc</title>
   <link rel="stylesheet" type="text/css" href="assets/css/pycalc.css">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono: 200, 400, 700" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/icon.png">
   <script src="assets/script/jquery-1.9.1.js"></script>
-  <script src="assets/script/script.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#help").hover(function(){
+    $("#textbox13").fadeIn(350);
+  }, function(){
+    $("#textbox13").fadeOut(350);
+  });
+
+  $("#note").hover(function(){
+    $("#textbox7").fadeIn(350);
+  }, function(){
+    $("#textbox7").fadeOut(350);
+  });
+  });
+  </script>
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 
