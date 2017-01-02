@@ -103,21 +103,21 @@ $(document).ready(function(){
   }
   };
 
-  function part3resize(){
-    if (($(window).width() < 1070) && ($(window).width() >= 685)) {
-      $("#part3").css("height", "130vh");
-    } else if ($(window).width() < 685) {
+  function part3resize(mobile){
+    if (($(window).width() < 685) || mobile) {
       $("#part3").css("height", "230vh");
+    } else if (($(window).width() < 1070) && ($(window).width() >= 685)) {
+      $("#part3").css("height", "130vh");
     } else {
       $("#part3").css("height", "100vh");
     }
   };
 
   windowresize(isMobile);
-  part3resize();
+  part3resize(isMobile);
  $(window).resize(function() {
    windowresize(isMobile);
-   part3resize();
+   part3resize(isMobile);
  });
 
 });
