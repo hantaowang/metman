@@ -54,8 +54,8 @@ a{
   height: 100vh;
   width: 100vw;
   background: #fafafa;
-  position: absolute;
-  top: 100vh;
+  position: relative;
+  top: 0;
   left: 0;
   overflow: hidden;
 }
@@ -79,7 +79,7 @@ a{
   height: calc(2vh + 2vw);
   width: 35vw;
   border: 4px solid #fafafa;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: calc(2vh + 1vw);
   text-align: left;
   line-height: calc(2vh + 2vw);
@@ -87,6 +87,7 @@ a{
   background-color: #fafafa;
   min-width: 200px;
   overflow: hidden;
+  font-weight: lighter;
 
 }
 
@@ -131,13 +132,12 @@ a{
 }
 
 #part3{
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
   background: #3ABEFF;
-  position: absolute;
-  top: 200vh;
+  position: relative;
+  top: 0;
   left: 0;
-  overflow: hidden;
 }
 
 #part3title{
@@ -154,15 +154,13 @@ a{
 }
 
 #projects{
-  position: absolute;
+  position: relative;
   top: 22vh;
   user-select: none;
-}
-
-.projrow{
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
   text-align: center;
-  width: 100vw;
-  overflow: hidden;
 }
 
 .projitem{
@@ -235,8 +233,8 @@ a{
   height: 100vh;
   width: 100vw;
   background: #3abeff;
-  position: absolute;
-  top: 400vh;
+  position: relative;
+  top: 0;
   left: 0;
   overflow: hidden;
   color: #fafafa;
@@ -246,37 +244,59 @@ a{
   height: 100vh;
   width: 100vw;
   background: #fafafa;
-  position: absolute;
-  top: 300vh;
+  position: relative;
+  top: 0;
   left: 0;
   overflow: hidden;
   color: #3abeff;
 }
 
 #part4title{
-  position: absolute;
+  position: relative;
   top: 6vh;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: 'Raleway', sans-serif;
   color: #3ABEFF;
   font-size: calc(5vh + 3vw);
   letter-spacing: 5px;
-  width: 80%;
+  width: 100%;
   text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
-.partsubtite{
+#part4bar{
+  width: 50%;
+  border-bottom: 3px solid #e9e9e9;
+  display: block;
+  margin: 0 auto;
+  margin-top: 6vh;
+}
+
+#part5subtite{
   position: absolute;
   top: 25vh;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: calc(2vh + 1vw);
   width: 70%;
   text-align: center;
   line-height: calc(3vh + 2vw);
   transition: 1s;
+}
+
+#part4subtite{
+  position: absolute;
+  top: calc(15vh + 5vw);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: calc(1vh + 1vw);
+  width: 70%;
+  text-align: left;
+  line-height: calc(1.5vh + 1.5vw);
+  transition: 1s;
+  letter-spacing: 0.1vw;
 }
 
 #part5title{
@@ -378,4 +398,28 @@ object{
 #button:hover{
   width: 20vw;
   letter-spacing: 1vw;
+}
+
+.course{
+  padding: 1.5vh 2vw;
+}
+
+.course:hover{
+  background-color: #f1f1f1;
+}
+
+.coursetitle{
+  width: 80%;
+  display: inline-block;
+}
+
+.grade{
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+}
+
+#GPA{
+  text-align: center;
+  padding: 3vh;
 }

@@ -103,9 +103,21 @@ $(document).ready(function(){
   }
   };
 
-  windowresize(isMobile)
+  function part3resize(){
+    if (($(window).width() < 1070) && ($(window).width() >= 685)) {
+      $("#part3").css("height", "130vh");
+    } else if ($(window).width() < 685) {
+      $("#part3").css("height", "230vh");
+    } else {
+      $("#part3").css("height", "100vh");
+    }
+  };
+
+  windowresize(isMobile);
+  part3resize();
  $(window).resize(function() {
-   windowresize(isMobile)
+   windowresize(isMobile);
+   part3resize();
  });
 
 });
