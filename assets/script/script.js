@@ -79,6 +79,7 @@ $(document).ready(function(){
    $("#part5title").fadeIn(350);
  };
 
+
  function windowresize(mobile){
    if (($(window).width() < 775) || mobile)  {
      $(".skill").css("width", "70vw");
@@ -98,7 +99,8 @@ $(document).ready(function(){
      $(".main").onepage_scroll({
        sectionContainer: "section",
        responsiveFallback: false,
-       loop: true
+       loop: true,
+       direction: "vertical"
      });
   }
   };
