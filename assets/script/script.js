@@ -111,7 +111,7 @@ $(document).ready(function(){
      $("#skills").css("left", "14%");
      $(".main").onepage_scroll({
        sectionContainer: "section",
-       responsiveFallback: false,
+       responsiveFallback: true,
        loop: true,
        direction: "vertical"
      });
