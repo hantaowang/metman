@@ -59,19 +59,19 @@ $(document).ready(function(){
         $("#menuprojects").css("background", "transparent");
       }
 
-      if (value + $(window).height() - 200 >= $('#part2').position().top && value + $(window).height() - 200 < $('#experience').position().top) {
+      if (value + $(window).height() - 200 >= $('#part2').position().top && value + $(window).height() - 400 < $('#experience').position().top) {
         $("#menuskills").css("background", "rgba(255, 255, 255, 0.3)");
       } else {
         $("#menuskills").css("background", "transparent");
       }
 
-      if (value + $(window).height() - 200 >= $('#experience').position().top && value + $(window).height() - 200 < $('#contact').position().top) {
+      if (value + $(window).height() - 400 >= $('#experience').position().top && value + $(window).height() - 400 < $('#contact').position().top) {
         $("#menuexp").css("background", "rgba(255, 255, 255, 0.3)");
       } else {
         $("#menuexp").css("background", "transparent");
       }
 
-      if (value + $(window).height() - 200 >= $('#contact').position().top) {
+      if (value + $(window).height() - 400 >= $('#contact').position().top) {
         $("#menucontact").css("background", "rgba(255, 255, 255, 0.3)");
       } else {
         $("#menucontact").css("background", "transparent");

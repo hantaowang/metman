@@ -300,13 +300,17 @@ a{
 
 #experience{
   position: absolute;
-  top: 3000px;
+  top: 2800px;
   width: 100%;
+}
+
+#experience-title{
+  top: 250px;
 }
 
 #jobs{
   position: absolute;
-  top: 200px;
+  top: 400px;
   font-size: 20px;
   text-align: left;
 }
@@ -380,7 +384,7 @@ a{
   top: 150px;
   left: 200px;
   height: 50px;
-  width: 300px;
+  width: 500px;
   line-height: 50px;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
