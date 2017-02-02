@@ -1,11 +1,8 @@
 $(document).ready(function(){
 
-  $(document).on('click', 'a', function(event){
-    event.preventDefault();
-
-    $("#wrapper").animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+  $('a[href*=#]').on('click', function(event){
+      event.preventDefault();
+      $("#wrapper").animate({scrollTop:$(this.hash).offset().top}, 500);
   });
 
   $('#wrapper').on('scroll', function () {
