@@ -375,6 +375,7 @@ a{
   position: absolute;
   top: 190px;
   right: 150px;
+  z-index: 1;
 }
 
 #resume-title{
@@ -397,6 +398,7 @@ a{
   font-size: 24px;
   text-align: left;
   margin: 20px;
+  z-index: 0;
 }
 
 .contact-icon{
