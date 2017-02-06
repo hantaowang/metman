@@ -52,7 +52,7 @@ a{
   z-index: 0;
 }
 
-#menubar{
+#menubackground{
   position: fixed;
   bottom: 0;
   height: 60px;
@@ -63,11 +63,18 @@ a{
   z-index: 1;
 }
 
+#menubar{
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 1000px;
+}
+
 .menuitem{
   position: relative;
   display: inline-block ;
   height: 60px;
-  width: 200px;
+  width: 190px;
   text-align: center;
   font-size: 14pt;
   line-height: 60px;
@@ -258,7 +265,7 @@ a{
 .skill{
   position: relative;
   height: 50px;
-  width: 35vw;
+  width: 500px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24pt;
   text-align: left;
@@ -280,7 +287,7 @@ a{
   right: 10%;
   height: 100%;
   top: 0;
-  width: 20vw;
+  width: 200px;
   line-height: 50px;
   text-align: right;
   color: white;
