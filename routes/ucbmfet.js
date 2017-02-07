@@ -21,9 +21,6 @@ function dicttosortedlist(dict) {
 var post_most_liked = dicttosortedlist(JSON.parse(fs.readFileSync("./public/json/posts_most_liked.json")));
 var post_most_commented = dicttosortedlist(JSON.parse(fs.readFileSync("./public/json/posts_most_commented.json")));
 
-
-console.log(post_most_commented);
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('ucbmfet',{
