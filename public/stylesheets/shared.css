@@ -67,3 +67,23 @@ a{
 .menuitem:hover{
   cursor: pointer;
 }
+
+#name{
+  font-size: 130pt;
+  position: relative;
+  top: 200px;
+  width: 1000px;
+  text-align: center;
+  pointer-events: none;
+  letter-spacing: 3pt;
+}
+
+#subtitle{
+  font-size: 30pt;
+  letter-spacing: 3;
+  position: fixed;
+  top: 450px;
+  width: 1000px;
+  text-align: center;
+  pointer-events: none;
+}
