@@ -3,6 +3,10 @@
   top: 250px;
 }
 
+#name{
+  position: relative;
+}
+
 #scrollwarning{
   display: none;
 }
