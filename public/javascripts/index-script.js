@@ -34,9 +34,11 @@ $(document).ready(function(){
           $("#name").css("position", "fixed");
           $("#name").css("top", "200px");
       } else {
+          scrolledPast = true;
           $("#name").css("font-size", "50pt");
-          $("#name").css("position", "relative");
+          $("#name").css("position", "absolute");
           $("#name").css("top", "700px");
+          $("a").css("pointer-events", "auto");
       }
 
       if (( value < 400) && (value > 100)){
@@ -65,13 +67,13 @@ $(document).ready(function(){
         $("#menuskills").css("background", "transparent");
       }
 
-      if (value + $(window).height() - 400 >= $('#experience').position().top && value + $(window).height() - 400 < $('#contact').position().top) {
+      if (value + $(window).height() - 400 >= $('#experience').position().top && value + $(window).height() - 300 < $('#contact').position().top) {
         $("#menuexp").css("background", "rgba(255, 255, 255, 0.3)");
       } else {
         $("#menuexp").css("background", "transparent");
       }
 
-      if (value + $(window).height() - 400 >= $('#contact').position().top) {
+      if (value + $(window).height() - 300 >= $('#contact').position().top) {
         $("#menucontact").css("background", "rgba(255, 255, 255, 0.3)");
       } else {
         $("#menucontact").css("background", "transparent");

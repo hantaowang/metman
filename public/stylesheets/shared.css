@@ -10,13 +10,14 @@ a{
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+  pointer-events: none;
 }
 
 #wrapper{
   position: fixed;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: calc(100vh - 60px);
+  height: 100%;
   width: 100%;
   margin: 0;
   bottom: 60px;
@@ -29,15 +30,14 @@ a{
 }
 
 #main{
-  height: 4060px;
   position: relative;
   top: 0;
-  width: 1000px;
-  height: 100%;
+  width: 90vw;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   color: white;
   z-index: 0;
+  min-width: 900px;
 }
 
 #menubar{
@@ -55,7 +55,8 @@ a{
   position: relative;
   display: inline-block ;
   height: 60px;
-  width: 200px;
+  width: 15%;
+  min-width: 120px;
   text-align: center;
   font-size: 14pt;
   line-height: 60px;
@@ -72,8 +73,10 @@ a{
   font-size: 130pt;
   position: relative;
   top: 200px;
-  width: 1000px;
-  text-align: center;
+  min-width: 900px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   pointer-events: none;
   letter-spacing: 3pt;
 }
@@ -83,7 +86,8 @@ a{
   letter-spacing: 3;
   position: fixed;
   top: 450px;
-  width: 1000px;
-  text-align: center;
+  width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
   pointer-events: none;
 }
