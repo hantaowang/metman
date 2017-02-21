@@ -6,7 +6,13 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700|Source+Sans+Pro:200,400,700" rel="stylesheet">
   <link rel="shortcut icon" href="images/icon.png">
   <script src="javascripts/jquery-1.9.1.js"></script>
-  <script src="javascripts/index-script.js"></script>
+  <script>
+  if (screen && screen.width > 480) {
+    document.write('<script type="text/javascript" src="javascripts/index-script.js"><\/script>');
+  } else {
+    document.write('<link rel="stylesheet" type="text/css" href="stylesheets/index-mobile.css">');
+  }
+  </script>
 </head>
 
 <body>
@@ -25,7 +31,7 @@
       <div id="about-section">
         <img src="images/will.png" id="profile">
       <div id="about">
-        I am an freshman studying <a href="https://eecs.berkeley.edu/" id="href">Electrical Engineering</a><a href="https://eecs.berkeley.edu/" id="href"> & Computer Science</a> at <a href="http://www.berkeley.edu/" id="href">UC Berkeley</a>.
+        I am an freshman studying <span id="href">Electrical Engineering & Computer Science</span> at <span id="href">UC Berkeley</span>.
         I am curious about pretty much everything and anything, but I have a special interest in machine learning and algorithms.
         When I'm not coding or modeling cool things, I would probably be swimming or playing basketball. <br> <br>
         Also, I love dogs.
@@ -91,79 +97,49 @@
       <div id="part2">
           <div class="sub-title">Skills</div>
           <div id="skills">
+            <% function stars(x) {
+              for (var i = 0; i < x; i++) { %>
+                <img src="images/star.png" class="star">
+              <% }
+            }%>
             <div class="skill-table">
               <div class="skill">&emsp;Python<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                <% stars(5);%>
               </div></div>
               <div class="skill">&emsp;Java<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                <% stars(5);%>
               </div></div>
               <div class="skill">&emsp;C<div class="bar"> Planned</div></div>
               <div class="skill">&emsp;HTML/CSS<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                <% stars(5);%>
               </div></div>
               <div class="skill">&emsp;Javascript<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                <% stars(4);%>
               </div></div>
               <div class="skill">&emsp;Ruby<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                      <% stars(3);%>
               </div></div>
               <div class="skill">&emsp;Bootstrap<div class="bar">
-                  <img src="images/star.png" class="star">
-                  <img src="images/star.png" class="star">
-                  <img src="images/star.png" class="star">
+                      <% stars(3);%>
                 </div></div>
             </div>
             <div class="skill-table">
               <div class="skill">&emsp;Rails<div class="bar"> Planned</div></div>
               <div class="skill">&emsp;Scheme<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                      <% stars(5);%>
               </div></div>
               <div class="skill">&emsp;AutoCAD<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                      <% stars(5);%>
               </div></div>
               <div class="skill">&emsp;SolidWorks<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                      <% stars(5);%>
               </div></div>
               <div class="skill">&emsp;Node.Js<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                      <% stars(3);%>
               </div></div>
               <div class="skill">&emsp;Angular.JS<div class="bar"> Planned</div></div>
               <div class="skill">&emsp;MySQL<div class="bar">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
-                <img src="images/star.png" class="star">
+                      <% stars(3);%>
               </div></div>
             </div>
           </div>

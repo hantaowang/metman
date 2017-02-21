@@ -38,6 +38,7 @@ a{
   color: white;
   z-index: 0;
   min-width: 900px;
+  max-width: 1200px;
 }
 
 #menubar{

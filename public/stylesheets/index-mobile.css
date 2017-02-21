@@ -1,0 +1,70 @@
+#subtitle{
+  position: relative;
+  top: 250px;
+}
+
+#scrollwarning{
+  display: none;
+}
+
+#about-section{
+  top: 350px;
+}
+
+
+#projects{
+  top: 450px;
+}
+
+a{
+  font-size: 28pt;
+}
+
+#part2{
+  top: 650px;
+}
+
+#about{
+  width: 80%;
+  font-size: 10pt;
+}
+
+#experience{
+  top: 650px;
+}
+
+.jobname{
+  font-size: 28pt;
+  width: 100%;
+}
+
+.jobdays, .position, .description{
+  width: 100%;
+  font-size: 20pt;
+}
+
+#contact{
+  top: 1500px;
+}
+
+.job-info{
+  width: 100%;
+  font-size: 24pt;
+}
+
+.job-img{
+  display: none;
+}
+
+#menubar{
+  opacity: 0;
+}
+
+#wrapper{
+  bottom: 0;
+  background: #0ABFBC; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FC354C, #0ABFBC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FC354C , #0ABFBC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
