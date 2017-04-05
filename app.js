@@ -22,14 +22,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/*', function(req, res, next) {
-    if (req.headers.host.match(/^www/) !== null ) {
-        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
-    } else {
-        next();
-    }
-})
-
 // path routes
 app.use('/', index);
 //app.use('/ucbmfet', ucbmfet);
