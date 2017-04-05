@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 // for importing routes
 var index = require('./routes/index');
 var ucbmfet = require('./routes/ucbmfet');
-
+var metman = require('./routes/metman')
 var app = express();
 
 // view engine setup
@@ -24,7 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // path routes
 app.use('/', index);
-app.use('/ucbmfet', ucbmfet);
+//app.use('/ucbmfet', ucbmfet);
+app.use('/metman', metman);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
