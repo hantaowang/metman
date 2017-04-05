@@ -16,10 +16,12 @@
   <div class="container">
     <div class="row" style="margin-top: 50px; text-align: center">
       <h1 class="display-4 col-lg-5 col-md-12">41 Node Man</h1>
-      <div class="btn-group col-lg-4 col-md-12" style="margin-top: 15px; display: block;" role="group" aria-label="Basic example">
+      <div class="btn-group col-lg-6 col-md-12" style="margin-top: 15px; display: block;" role="group" aria-label="Basic example">
         <button type="button" onclick="showThis(0)" class="btn btn-outline-primary">Mode 0</button>
         <button type="button" onclick="showThis(1)" class="btn btn-outline-primary">Mode 1</button>
         <button type="button" onclick="showThis(2)" class="btn btn-outline-primary">Mode 2</button>
+        <button type="button" onclick="" class="btn btn-outline-primary">Import</button>
+
       </div>
     </div>
     <div class="jumbotron jumbotron-fluid" id="mode0jumbo" style="padding: 25px; margin-top: 20px">
@@ -208,28 +210,44 @@
 <script>
 var mode = -1;
 function showThis(num){
-  mode = num;
-  $("#runButton").show();
-  $(".jumbotron").hide();
-  if (num == 0) {
-    $("#mode0jumbo").show();
-  } else if (num == 1) {
-    $("#mode1jumbo").show();
-  } else {
-    $("#mode2jumbo").show();
+  try {
+    mode = num;
+    $("#runButton").show();
+    $(".jumbotron").hide();
+    if (num == 0) {
+        $("#mode0jumbo").show();
+    } else if (num == 1) {
+        $("#mode1jumbo").show();
+    } else {
+        $("#mode2jumbo").show();
+    }
+  } catch (err) {
+      alert(err.stack);
   }
 }
 
 function clearButton(){
-    var name = "m" + mode.toString();
-    var x = 50;
-    for (var i = 0; i < x; i ++) {
-        document.getElementById(name + i.toString()).value = "";
+    try {
+        var name = "m" + mode.toString();
+        var x = 500;
+        for (var i = 0; i < x; i ++) {
+            var item = document.getElementById(name + i.toString());
+            if (item == null) {
+                break;
+            }
+            item.value = "";
+        }
+    } catch (err) {
+        alert(err.stack);
     }
 }
 
 function runButton(){
-    alert("you ran mode " + mode);
+    try {
+        alert("you ran mode " + mode);
+    } catch (err) {
+        alert(err.stack);
+    }
 }
 
 </script>
