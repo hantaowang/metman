@@ -20,601 +20,168 @@
         <button type="button" onclick="showThis(0)" class="btn btn-outline-primary">Mode 0</button>
         <button type="button" onclick="showThis(1)" class="btn btn-outline-primary">Mode 1</button>
         <button type="button" onclick="showThis(2)" class="btn btn-outline-primary">Mode 2</button>
-        <button type="button" id="runButton" onclick="runButton()" class="btn btn-outline-danger">Run</button>
-
       </div>
     </div>
     <div class="jumbotron jumbotron-fluid" id="mode0jumbo" style="padding: 25px; margin-top: 20px">
       <div class="container">
-      <h3>Mode 0</h1>
+        <div class="row">
+          <h3 class="col-5">Mode 0</h3>
+          <div class="btn-group col-7" style="display: block;" role="group" aria-label="Basic example">
+            <button type="button"  onclick="clearButton()" class="btn btn-outline-danger">Clear</button>
+            <button type="button"  onclick="runButton()" class="btn btn-outline-danger">Run</button>
+          </div>
+        </div>
       <p class="lead">Some description of this mode goes here.</p>
         <div class="row">
           <div class="col-lg-4 col-md-12">
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+              <% var x = m0f.length;
+              var y = x/3;
+              var n = 0;
+              for (var i = 0; i < y; i++) { %>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-3 col-form-label"><%= m0f[n]%></label>
+                <div class="col-9">
+                  <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>" id="example-text-input">
+                </div>
               </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
+              <% n++; }%>
           </div>
           <div class="col-lg-4 col-md-12">
+              <%
+              for (var i = 0; i < y; i++) { %>
             <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
+              <label for="example-text-input" class="col-3 col-form-label"><%= m0f[n]%></label>
               <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>" id="example-text-input">
               </div>
             </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
+              <% n++; }%>
           </div>
           <div class="col-lg-4 col-md-12">
+              <%
+              for (var i = 0; i < y; i++) {
+                if (n >= x) {
+                  break;
+                }%>%>
             <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
+              <label for="example-text-input" class="col-3 col-form-label"><%= m0f[n]%></label>
               <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>" id="example-text-input">
               </div>
             </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
+              <% n++; }%>
           </div>
         </div>
       </div>
     </div>
     <div class="jumbotron jumbotron-fluid" id="mode1jumbo" style="padding: 25px; margin-top: 20px">
       <div class="container">
-      <h3>Mode 1</h1>
-      <p class="lead">Some description of this mode goes here.</p>
         <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
+          <h3 class="col-5">Mode 1</h3>
+          <div class="btn-group col-7" style="display: block;" role="group" aria-label="Basic example">
+            <button type="button" onclick="clearButton()" class="btn btn-outline-danger">Clear</button>
+            <button type="button" onclick="runButton()" class="btn btn-outline-danger">Run</button>
           </div>
         </div>
+          <p class="lead">Some description of this mode goes here.</p>
+          <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <% var x = m1f.length;
+                var y = x/3;
+                if (x % 3 > 0) {
+                  //y += 1;
+                }
+                var n = 0;
+                for (var i = 0; i < y; i++) { %>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-3 col-form-label"><%= m1f[n]%></label>
+                <div class="col-9">
+                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>" id="example-text-input">
+                </div>
+              </div>
+                <% n++; }%>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <%
+                for (var i = 0; i < y; i++) { %>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-3 col-form-label"><%= m1f[n]%></label>
+                <div class="col-9">
+                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>" id="example-text-input">
+                </div>
+              </div>
+                <% n++; }%>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <%
+                for (var i = 0; i < y; i++) {
+                if (n >= x) {
+                  break;
+                }%>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-3 col-form-label"><%= m1f[n]%></label>
+                <div class="col-9">
+                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>" id="example-text-input">
+                </div>
+              </div>
+                <% n++; }%>
+            </div>
+          </div>
       </div>
     </div>
     <div class="jumbotron jumbotron-fluid" id="mode2jumbo" style="padding: 25px; margin-top: 20px">
       <div class="container">
-      <h3>Mode 2</h1>
-      <p class="lead">Some description of this mode goes here.</p>
         <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label">Text</label>
-              <div class="col-9">
-                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-              </div>
-            </div>
-
+          <h3 class="col-5">Mode 2</h3>
+          <div class="btn-group col-7" style="display: block;" role="group" aria-label="Basic example">
+            <button type="button" onclick="clearButton()" class="btn btn-outline-danger">Clear</button>
+            <button type="button" onclick="runButton()" class="btn btn-outline-danger">Run</button>
           </div>
         </div>
+          <p class="lead">Some description of this mode goes here.</p>
+          <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <% var x = m2f.length;
+                var y = x/3;
+                var n = 0;
+                for (var i = 0; i < y; i++) { %>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-3 col-form-label"><%= m2f[n]%></label>
+                <div class="col-9">
+                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>" id="example-text-input">
+                </div>
+              </div>
+                <% n++; }%>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <%
+                for (var i = 0; i < y; i++) { %>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-3 col-form-label"><%= m2f[n]%></label>
+                <div class="col-9">
+                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>" id="example-text-input">
+                </div>
+              </div>
+                <% n++; }%>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <%
+                for (var i = 0; i < y; i++) {
+                  if (n >= x) {
+                    break;
+                  }%>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-3 col-form-label"><%= m2f[n]%></label>
+                <div class="col-9">
+                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>" id="example-text-input">
+                </div>
+              </div>
+                <% n++; }%>
+            </div>
+          </div>
       </div>
     </div>
+
 
 </body>
 
@@ -625,6 +192,8 @@
 
 .jumbotron{
   display: none;
+  border-radius: 25px;
+  border: 0;
 }
 
 #runButton{
@@ -632,7 +201,7 @@
 }
 
 .col-form-label{
-  text-align: right;
+  text-align: center;
 }
 </style>
 
@@ -651,9 +220,18 @@ function showThis(num){
   }
 }
 
-function runButton(){
-  alert("you ran mode " + mode);
+function clearButton(){
+    var name = "m" + mode.toString();
+    var x = 50;
+    for (var i = 0; i < x; i ++) {
+        document.getElementById(name + i.toString()).value = "";
+    }
 }
+
+function runButton(){
+    alert("you ran mode " + mode);
+}
+
 </script>
 
 
