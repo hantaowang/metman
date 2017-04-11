@@ -5,11 +5,12 @@
   <!-- meta tags -->
   <meta charset="utf-8">
   <title>METMAN</title>
+  <script src="javascripts/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="javascripts/metmanScript.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -41,9 +42,9 @@
               var n = 0;
               for (var i = 0; i < y; i++) { %>
               <div class="form-group row">
-                <label for="example-text-input" class="col-3 col-form-label"><%= m0f[n]%></label>
+                <label for="example-text-input" id="<%= "m0f" + n.toString()%>" class="col-3 col-form-label"><%= m0f[n]%></label>
                 <div class="col-9">
-                  <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>" id="example-text-input">
+                  <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>">
                 </div>
               </div>
               <% n++; }%>
@@ -52,9 +53,9 @@
               <%
               for (var i = 0; i < y; i++) { %>
             <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label"><%= m0f[n]%></label>
+              <label for="example-text-input" id="<%= "m0f" + n.toString()%>" class="col-3 col-form-label"><%= m0f[n]%></label>
               <div class="col-9">
-                <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>" id="example-text-input">
+                <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>">
               </div>
             </div>
               <% n++; }%>
@@ -66,9 +67,9 @@
                   break;
                 }%>%>
             <div class="form-group row">
-              <label for="example-text-input" class="col-3 col-form-label"><%= m0f[n]%></label>
+              <label for="example-text-input" id="<%= "m0f" + n.toString()%>" class="col-3 col-form-label"><%= m0f[n]%></label>
               <div class="col-9">
-                <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>" id="example-text-input">
+                <input id="<%= "m0" + n.toString()%>" class="form-control" type="text" value="<%= m0d[n]%>">
               </div>
             </div>
               <% n++; }%>
@@ -96,9 +97,9 @@
                 var n = 0;
                 for (var i = 0; i < y; i++) { %>
               <div class="form-group row">
-                <label for="example-text-input" class="col-3 col-form-label"><%= m1f[n]%></label>
+                <label for="example-text-input" id="<%= "m1f" + n.toString()%>" class="col-3 col-form-label"><%= m1f[n]%></label>
                 <div class="col-9">
-                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>" id="example-text-input">
+                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>">
                 </div>
               </div>
                 <% n++; }%>
@@ -107,9 +108,9 @@
                 <%
                 for (var i = 0; i < y; i++) { %>
               <div class="form-group row">
-                <label for="example-text-input" class="col-3 col-form-label"><%= m1f[n]%></label>
+                <label for="example-text-input" id="<%= "m1f" + n.toString()%>" class="col-3 col-form-label"><%= m1f[n]%></label>
                 <div class="col-9">
-                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>" id="example-text-input">
+                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>">
                 </div>
               </div>
                 <% n++; }%>
@@ -121,9 +122,9 @@
                   break;
                 }%>
               <div class="form-group row">
-                <label for="example-text-input" class="col-3 col-form-label"><%= m1f[n]%></label>
+                <label for="example-text-input" id="<%= "m1f" + n.toString()%>" class="col-3 col-form-label"><%= m1f[n]%></label>
                 <div class="col-9">
-                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>" id="example-text-input">
+                  <input id="<%= "m1" + n.toString()%>" class="form-control" type="text" value="<%= m1d[n]%>">
                 </div>
               </div>
                 <% n++; }%>
@@ -148,9 +149,9 @@
                 var n = 0;
                 for (var i = 0; i < y; i++) { %>
               <div class="form-group row">
-                <label for="example-text-input" class="col-3 col-form-label"><%= m2f[n]%></label>
+                <label for="example-text-input" id="<%= "m2f" + n.toString()%>" class="col-3 col-form-label"><%= m2f[n]%></label>
                 <div class="col-9">
-                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>" id="example-text-input">
+                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>">
                 </div>
               </div>
                 <% n++; }%>
@@ -159,9 +160,9 @@
                 <%
                 for (var i = 0; i < y; i++) { %>
               <div class="form-group row">
-                <label for="example-text-input" class="col-3 col-form-label"><%= m2f[n]%></label>
+                <label for="example-text-input" id="<%= "m2f" + n.toString()%>" class="col-3 col-form-label"><%= m2f[n]%></label>
                 <div class="col-9">
-                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>" id="example-text-input">
+                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>">
                 </div>
               </div>
                 <% n++; }%>
@@ -173,9 +174,9 @@
                     break;
                   }%>
               <div class="form-group row">
-                <label for="example-text-input" class="col-3 col-form-label"><%= m2f[n]%></label>
+                <label for="example-text-input" id="<%= "m2f" + n.toString()%>" class="col-3 col-form-label"><%= m2f[n]%></label>
                 <div class="col-9">
-                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>" id="example-text-input">
+                  <input id="<%= "m2" + n.toString()%>" class="form-control" type="text" value="<%= m2d[n]%>">
                 </div>
               </div>
                 <% n++; }%>
@@ -206,51 +207,5 @@
   text-align: center;
 }
 </style>
-
-<script>
-var mode = -1;
-function showThis(num){
-  try {
-    mode = num;
-    $("#runButton").show();
-    $(".jumbotron").hide();
-    if (num == 0) {
-        $("#mode0jumbo").show();
-    } else if (num == 1) {
-        $("#mode1jumbo").show();
-    } else {
-        $("#mode2jumbo").show();
-    }
-  } catch (err) {
-      alert(err.stack);
-  }
-}
-
-function clearButton(){
-    try {
-        var name = "m" + mode.toString();
-        var x = 500;
-        for (var i = 0; i < x; i ++) {
-            var item = document.getElementById(name + i.toString());
-            if (item == null) {
-                break;
-            }
-            item.value = "";
-        }
-    } catch (err) {
-        alert(err.stack);
-    }
-}
-
-function runButton(){
-    try {
-        alert("you ran mode " + mode);
-    } catch (err) {
-        alert(err.stack);
-    }
-}
-
-</script>
-
 
 </html>
