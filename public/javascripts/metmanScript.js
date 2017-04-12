@@ -39,21 +39,21 @@ function clearButton() {
 
 function runButton() {
     try {
-        var message = " &INPUT\n";
-        message += "      MODE=" + mode.toString() + ",\n";
+        var message = "";
+        message += "?MODE=" + mode.toString();
         var name = "m" + mode.toString();
         var x = 500;
         for (var i = 0; i < x; i++) {
+            message += "&";
             var value = document.getElementById(name + i.toString());
             if (value == null) {
                 break;
             }
             value = value.value;
             var label = document.getElementById(name + "f" + i.toString()).innerHTML;
-            message += "      " + label + "=" + value + ",\n";
+            message += label + "=" + value;
         }
-        message += " &END";
-        alert(message);
+        location.href += message;
     } catch (err) {
         alert(err.stack);
     }
