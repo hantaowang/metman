@@ -45,7 +45,7 @@ function runFortran(len, params) {
                     return console.log(err);
                 }
             });
-            exec('wine MetManFortran.exe', function(error, stdout, stderr) {
+            exec('MetManFortran.exe', function(error, stdout, stderr) {
                 console.log(error)
                 console.log(stdout.toString());
                 console.log(stderr.toString());
@@ -60,7 +60,7 @@ function runFortran(len, params) {
             return err.stack;
         }
     }
-    return null;
+    return "No message Yet";
 }
 
 /* GET home page. */
