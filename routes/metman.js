@@ -46,9 +46,9 @@ function runFortran(len, params) {
                 }
             });
             exec('./public/files/MetManFortran.exe', function(error, stdout, stderr) {
-                console.log(error)
-                console.log(stdout.toString());
-                console.log(stderr.toString());
+              if (error) {
+                  return console.log(err);
+              }
             });
             fs.readFile('./public/files/case.out', 'utf8', function (err,data) {
                 if (err) {
