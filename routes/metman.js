@@ -30,6 +30,7 @@ var mode2defaults = ["0", "800", "19.5", "15.5", "1", "14.7",
     "0.046", "0.9", "1.0", "F", "0", "0.05", "180", "60", "0", "10*0.0", "62", "67", "154"];
 
 function runFortran(len, params) {
+    re = ""
     if (len > 0) {
         var message = " &INPUT\n";
         message += "      " + "MODE" + "=" + params["MODE"] + ",\n";
@@ -42,32 +43,35 @@ function runFortran(len, params) {
         try {
             fs.writeFile("./public/files/case.inp", message, function(err) {
                 if(err) {
-                    return console.log(err);
+                  console.log(err);
+                  throw new Error();
                 }
             });
             exec('./public/files/MetManFortran.exe', function(error, stdout, stderr) {
               if (error) {
-                  return console.log(err);
+                  console.log(stderr);
+                  throw new Error();
               }
             });
             fs.readFile('./public/files/case.out', 'utf8', function (err,data) {
                 if (err) {
-                    return console.log(err);
+                  console.log(err);
+                  throw new Error();
                 }
-                return data;
+                res.render('metman', {data: data, m0f: mode0fields, m0d: mode0defaults, m1f: mode1fields, m1d: mode1defaults, m2f: mode2fields, m2d: mode2defaults});
             });
         } catch (err) {
-            return err.stack;
+          res.render('metman', {data: err.stack(), m0f: mode0fields, m0d: mode0defaults, m1f: mode1fields, m1d: mode1defaults, m2f: mode2fields, m2d: mode2defaults});
         }
+    } else {
+      res.render('metman', {data: "", m0f: mode0fields, m0d: mode0defaults, m1f: mode1fields, m1d: mode1defaults, m2f: mode2fields, m2d: mode2defaults});
     }
-    return "No message Yet";
 }
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
     var params = url.parse(req.url,true).query;
     var re = runFortran(Object.keys(params).length, params);
-    res.render('metman', {data: re, m0f: mode0fields, m0d: mode0defaults, m1f: mode1fields, m1d: mode1defaults, m2f: mode2fields, m2d: mode2defaults});
 });
 
 
