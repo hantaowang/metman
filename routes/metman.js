@@ -29,7 +29,7 @@ var mode2defaults = ["0", "800", "19.5", "15.5", "1", "14.7",
     "25", "70", "50", "0.24", "70", "0.0423", "0.0141",
     "0.046", "0.9", "1.0", "F", "0", "0.05", "180", "60", "0", "10*0.0", "62", "67", "154"];
 
-function runFortran(len, params) {
+function runFortran(len, params, res) {
     re = ""
     if (len > 0) {
         var message = " &INPUT\n";
@@ -67,7 +67,7 @@ function runFortran(len, params) {
 /* GET home page. */
 router.get('/', function(req, res, next) {
     var params = url.parse(req.url,true).query;
-    var re = runFortran(Object.keys(params).length, params);
+    runFortran(Object.keys(params).length, params, res);
 });
 
 
