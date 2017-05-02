@@ -1,0 +1,50 @@
+ &INPUT
+ 
+ ! Human Parameters
+      MODE = 2,
+      AC = 19.5,
+      ARI = 19.5,
+      RM = 1600.0,
+	  UEFF = 0.0,
+      AVRM = F,
+      HEIGHT = 67.0,
+      WEIGHT = 154.0,
+	  
+! Undergarment
+      AKUG = 0.046,
+      ALUG = 0.0141,
+	  EUG = 0.9,
+	  
+! Suit Environment
+	  CFMS = 6.0,
+	  CPG = 0.22,
+	  PG = 4.3,
+	  PO2 = 4.3,
+      TDEW = 40.0,
+	  TGIN = 60.0,
+	  VOLHMT = 0.1968,
+	  
+! Suit Composition
+      ACSUIT = 9.82, 2.95, 2.95, 5.96, 5.96, 0.81, 0.81, 1.81, 1.81, 2.52,
+      ARSUIT = 9.82, 2.95, 2.95, 5.96, 5.96, 0.81, 0.81, 1.81, 1.81, 2.52,
+      ALS = 9*0.0033, 0.021,
+      AKS = 9*0.000214, 0.02155,
+      EIS = 10*0.90,
+	  EOS = 9*0.91, 0.62,
+      CPS = 9*0.22, 0.30,
+	  QASRB = 10*120.0,
+	  WS = 22.6, 4.53, 4.53, 7.65, 7.65, 0.995, 0.995, 3.68, 3.68, 4.56,
+	  
+! Liquid-Cooled Garment
+      CPW = 1.0,
+	  LCG = T,
+	  TWI = 65.0,
+	  WF = 185.0,
+	  
+! Programming/Display Parameters
+      DT = 0.05,
+      MCASES = 0,
+      PRINTI = 240.0,
+	  SETI = 240.0,
+
+ &END
