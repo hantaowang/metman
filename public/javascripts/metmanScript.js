@@ -53,9 +53,8 @@ function runButton() {
             var label = document.getElementById(name + "f" + i.toString()).innerHTML;
             message += label + "=" + value;
         }
-        location.href += message;
+        location.href = message;
     } catch (err) {
         alert(err.stack);
     }
 }
-
