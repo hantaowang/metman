@@ -40,17 +40,17 @@ function runFortran(len, params, res) {
             }
         }
         message += " &END";
-        fs.writeFile("./public/files/case.inp", message, function(err) {
+        fs.writeFile("./case.inp", message, function(err) {
             if(err) {
               console.log(err);
             }
         });
-        exec('./public/files/MetManFortran.exe', function(error, stdout, stderr) {
+        exec('./MetManFortran.exe', function(error, stdout, stderr) {
           if (error) {
               console.log(stderr);
           }
         });
-        fs.readFile('./public/files/case.out', 'utf8', function (err,data) {
+        fs.readFile('./case.out', 'utf8', function (err,data) {
             if (err) {
               console.log(err);
             }
