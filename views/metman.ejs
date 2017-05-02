@@ -25,9 +25,7 @@
 
       </div>
     </div>
-    <% if (data != null) { %>
-      <div><%= data%></div>
-    <%}%>
+
     <div class="jumbotron jumbotron-fluid" id="mode0jumbo" style="padding: 25px; margin-top: 20px">
       <div class="container">
         <div class="row">
@@ -37,7 +35,7 @@
             <button type="button"  onclick="runButton()" class="btn btn-outline-danger">Run</button>
           </div>
         </div>
-      <p class="lead">Some description of this mode goes here.</p>
+      <p class="lead">The shirt sleeve mode is designed to simulate a man dressed in an undergarment in a cabin environment.</p>
         <div class="row">
           <div class="col-lg-4 col-md-12">
               <% var x = m0f.length;
@@ -89,7 +87,7 @@
             <button type="button" onclick="runButton()" class="btn btn-outline-danger">Run</button>
           </div>
         </div>
-          <p class="lead">Some description of this mode goes here.</p>
+          <p class="lead">NOT IMPLEMENTED! The intravehicular activity (IVA) mode is designed to simulate a fully-suited man inside a vehicle environment. IVA mode has the option for Liquid Cooled Garments (LCG).</p>
           <div class="row">
             <div class="col-lg-4 col-md-12">
                 <% var x = m1f.length;
@@ -144,7 +142,7 @@
             <button type="button" onclick="runButton()" class="btn btn-outline-danger">Run</button>
           </div>
         </div>
-          <p class="lead">Some description of this mode goes here.</p>
+          <p class="lead">The extravehicular activity (EVA) mode is designed to simulate a fully-suited crew member in during extravehicular activity. Similar to IVA mode, EVA mode allows for liquid cooled garments. The key difference between IVA and EVA mode inputs is that EVA typically replaces cabin wall temperature, cabin pressure, and cabin gas dew point and velocity with incident absorbed heat from the environment.</p>
           <div class="row">
             <div class="col-lg-4 col-md-12">
                 <% var x = m2f.length;
@@ -187,6 +185,9 @@
           </div>
       </div>
     </div>
+    <% if (data != null) { %>
+      <div style="white-space: pre; font-family: monospace"><%= data%></div>
+    <%}%>
 
 
 </body>

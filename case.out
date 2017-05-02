@@ -1,0 +1,185 @@
+1
+1                 INITIAL CONDITIONS
+
+
+                     EVA MODE
+
+                       MAN
+ METABOLIC ACTIVITY LEVEL, BTU/HR----------------  1600.000
+ USEFUL WORK EFFICIENCY, PERCENT-----------------     0.000
+ CONVECTIVE AREA OF MAN, SQ FT-------------------    19.500
+ RADIATIVE AREA OF MAN, SQ FT--------------------    19.500
+ HEIGHT OF MAN,  IN------------------------------    67.000
+ WEIGHT OF MAN,  LB------------------------------   154.000
+0                      CABIN
+ CABIN ATMOSPHERIC TEMPERATURE, F----------------     0.000
+ EFFECTIVE WALL TEMPERATURE, F-------------------     0.000
+ FREESTREAM VELOCITY, FT/MIN---------------------     0.000
+ CABIN PRESSURE, PSIA----------------------------    14.700
+0                   UNDERGARMENT
+ THICKNESS OF UNDERGARMENT-----------------------     0.014
+ CONDUCTIVITY OF UNDERGARMENT--------------------     0.046
+ EMISSIVITY OF UNDERGARMENT----------------------     0.900
+0                LIQUID COOLED GARMENT
+ LIQUID COOLANT FLOW RATE, LB/HR-----------------   185.000
+ TEMPERATURE OF LIQUID COOLANT IN----------------    65.000
+ SPECIFIC HEAT OF COOLANT------------------------     1.000
+ UA OF LIQUID COOLED GARMENT---------------------     0.000
+0                  PRESSURE SUIT
+ Q ABSORBED PER SQ FT
+         TORSO ----------------------------------   120.000
+         RIGHT SLEEVE ---------------------------   120.000
+         LEFT SLEEVE ----------------------------   120.000
+         RIGHT LEG ------------------------------   120.000
+         LEFT LEG -------------------------------   120.000
+         RIGHT GLOVE ----------------------------   120.000
+         LEFT GLOVE -----------------------------   120.000
+         RIGHT BOOT -----------------------------   120.000
+         LEFT BOOT ------------------------------   120.000
+         HELMET ---------------------------------   120.000
+ SUIT LOOP FLOW, CFM ----------------------------     6.000
+ SPECIFIC HEAT OF GAS ---------------------------     0.220
+ TEMPERATURE OF GAS INTO SUIT -------------------    60.000
+ DEWPOINT TEMPERATURE AT SUIT INLET, F ----------    40.000
+ TOTAL SUIT PRESSURE, PSIA IT INLET, F ----------     4.300
+ PARTIAL PRESSURE OF OXYGEN IN SUIT, PSIA -------     4.300
+0RADIATIVE AREA OF SUIT COMPONENTS, SQ FT         
+         TORSO ----------------------------------     9.808
+         EACH SLEEVE ----------------------------   202.709
+         EACH LEG -------------------------------   205.715
+         HELMET ---------------------------------   202.278
+         EACH GLOVE -----------------------------   200.571
+         EACH BOOT ------------------------------   201.570
+0CONVECTIVE AREA OF SUIT COMPONENTS, SQ FT        
+         TORSO ----------------------------------     9.808
+         EACH SLEEVE ----------------------------   202.709
+         EACH LEG -------------------------------   205.715
+         HELMET ---------------------------------   202.278
+         EACH GLOVE -----------------------------   200.571
+         EACH BOOT ------------------------------   201.570
+0WEIGHT OF SUIT COMPONENTS                        
+         TORSO ----------------------------------    22.573
+         EACH SLEEVE ----------------------------   204.287
+         EACH LEG -------------------------------   207.403
+         HELMET ---------------------------------   204.316
+         EACH GLOVE -----------------------------   200.756
+         EACH BOOT ------------------------------   203.438
+0SPECIFIC HEAT OF SUIT COMPONENTS                 
+         TORSO ----------------------------------     0.220
+         EACH SLEEVE ----------------------------     0.220
+         EACH LEG -------------------------------     0.220
+         HELMET ---------------------------------   200.300
+         EACH GLOVE -----------------------------     0.220
+         EACH BOOT ------------------------------     0.220
+0THICKNESS OF SUIT COMPONENTS, FT                 
+         TORSO ----------------------------------     0.003
+         EACH SLEEVE ----------------------------     0.003
+         EACH LEG -------------------------------     0.003
+         HELMET ---------------------------------   200.021
+         EACH GLOVE -----------------------------     0.003
+         EACH BOOT ------------------------------     0.003
+0CONDUCTIVITY OF SUIT COMPONENTS                  
+         TORSO ----------------------------------     0.000
+         EACH SLEEVE ----------------------------     0.000
+         EACH LEG -------------------------------     0.000
+         HELMET ---------------------------------   200.022
+         EACH GLOVE -----------------------------     0.000
+         EACH BOOT ------------------------------     0.000
+0EMISSIVITY OF INNER SURFACE OF SUIT COMPONENTS   
+         TORSO ----------------------------------     0.900
+         EACH SLEEVE ----------------------------     0.900
+         EACH LEG -------------------------------     0.900
+         HELMET ---------------------------------     0.900
+         EACH GLOVE -----------------------------     0.900
+         EACH BOOT ------------------------------     0.900
+0EMISSIVITY OF OUTER SURFACE OF SUIT COMPONENTS   
+         TORSO ----------------------------------     0.910
+         EACH SLEEVE ----------------------------     0.910
+         EACH LEG -------------------------------     0.910
+         HELMET ---------------------------------   200.620
+         EACH GLOVE -----------------------------     0.910
+         EACH BOOT ------------------------------     0.910
+0MAXIMUM RUN TIME, MINUTES-----------------------   240.000
+1  TIME,    TEMP   S/H AT    TEMP    AV TEMP  AV TEMP AV TEMP  Q THRU  Q SENSIBLE  QEVAP  Q LATENT  HEAT    SHIVER   TOTAL  
+    MIN      GAS    SUIT  HEAD CORE   SKIN    INSIDE   O UTSIDE    SUIT   TOTAL     BTU/HR   BTU/HR  STORAGE   RATE    HEAT   
+             OUT,  OUTLET     F        F      OF SUIT  OF  SUIT  BTU/HR  BTU/HR                       RATE    BTU/HR   STORAGE  
+              F                                  F     F                                         BTU/HR             BTU     
+
+
+     0.0     0.00    0.000    98.60     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00
+     LCG INLET WATER TEMPERATURE -------    65.000  0F
+     LCG OUTLET WATER TEMPERATURE ------     0.000  0F    
+     LCG WATER TEMPERATURE DIFFERENCE --   -65.000  0F    
+     SUIT INLET DEWPOINT TEMPERATURE ---    40.000  0F    
+     SUIT INLET DRY BULB TEMPERATURE ---    60.000  0F    
+     OXYGEN USED -----------------------     0.000  LBS   
+     CO2 PRODUCED ----------------------     0.000  LBS   
+     TOTAL WATER EVAPORATION FROM BODY -     0.000  LBS   
+     FEED WATER USED -------------------     0.000  LBS   
+     METABOLIC RATE --------------------  1600.000  BTU/HR
+     WATER FLOW RATE -------------------   185.000  LB/HR 
+      PARTIAL PRESSURE OF CO2 IN HELMET    0.000000  MM HG
+
+1  TIME,    TEMP   S/H AT    TEMP    AV TEMP  AV TEMP AV TEMP  Q THRU  Q SENSIBLE  QEVAP  Q LATENT  HEAT    SHIVER   TOTAL  
+    MIN      GAS    SUIT  HEAD CORE   SKIN    INSIDE   O UTSIDE    SUIT   TOTAL     BTU/HR   BTU/HR  STORAGE   RATE    HEAT   
+             OUT,  OUTLET     F        F      OF SUIT  OF  SUIT  BTU/HR  BTU/HR                       RATE    BTU/HR   STORAGE  
+              F                                  F     F                                         BTU/HR             BTU     
+
+
+   122.7    82.86    0.068    99.70    85.96    79.75    53.13 47556.98  1108.93   303.48   489.31     1.76     0.00   175.85
+     LCG INLET WATER TEMPERATURE -------    65.000  0F
+     LCG OUTLET WATER TEMPERATURE ------    70.303  0F    
+     LCG WATER TEMPERATURE DIFFERENCE --     5.303  0F    
+     SUIT INLET DEWPOINT TEMPERATURE ---    40.000  0F    
+     SUIT INLET DRY BULB TEMPERATURE ---    60.000  0F    
+     OXYGEN USED -----------------------     0.470  LBS   
+     CO2 PRODUCED ----------------------     0.582  LBS   
+     TOTAL WATER EVAPORATION FROM BODY -     1.036  LBS   
+     FEED WATER USED -------------------     0.000  LBS   
+     METABOLIC RATE --------------------  1600.000  BTU/HR
+     WATER FLOW RATE -------------------   185.000  LB/HR 
+      PARTIAL PRESSURE OF CO2 IN HELMET    5.974313  MM HG
+
+ &TEST
+ T4      =   92.80911    ,
+ T5      =   100.5391    ,
+ T8      =   81.28780    ,
+ T12     =   84.64632    ,
+ T20     =   86.81626    ,
+ SQUGW   =   91.33221    ,
+ SQOSA   =  0.0000000E+00,
+ SQOSW   =   718605.1    ,
+ SROR    =   109.1925    ,
+ TDEWOT  =   80.33709    ,
+ EMTOT   =   328.0282    ,
+ TAVSKN  =   84.00949    ,
+ UAG     =   60.50246    ,
+ QRSE15  =   9.801807    ,
+ SCONV   = -1.0737418E+08,
+ SLCG    = -1.0737418E+08,
+ QR      =   161.2828    ,
+ QD      =   24.55306    
+ /
+ &TSUIT
+ TIS     =   79.63335    , 2*78.20112       , 2*78.18326       , 2*78.92596       , 2*79.75313       ,   90.60699    ,
+ TOS     =   67.58292    , 2*67.50494       , 2*67.50687       , 2*67.55355       , 2*67.61081       ,  -138.6307    
+ /
+ T=  0.9970011E+02  0.9554509E+02  0.9370912E+02  0.9280911E+02
+ T=  0.1005391E+03  0.1012769E+03  0.8826932E+02  0.8128780E+02
+ T=  0.9963612E+02  0.9919491E+02  0.8868320E+02  0.8464632E+02
+ T=  0.9963612E+02  0.9919491E+02  0.8868320E+02  0.8464632E+02
+ T=  0.1012703E+03  0.1012794E+03  0.9214906E+02  0.8681626E+02
+ T=  0.1012703E+03  0.1012794E+03  0.9214906E+02  0.8681626E+02
+ T=  0.9801229E+02  0.9793877E+02  0.9610294E+02  0.9442299E+02
+ T=  0.9801229E+02  0.9793877E+02  0.9610294E+02  0.9442299E+02
+ T=  0.9806822E+02  0.9798549E+02  0.9681741E+02  0.9549815E+02
+ T=  0.9806822E+02  0.9798549E+02  0.9681741E+02  0.9549815E+02
+ T=  0.1002543E+03  0.7963335E+02  0.7820112E+02  0.7820112E+02
+ T=  0.7818326E+02  0.7818326E+02  0.7892596E+02  0.7892596E+02
+ T=  0.7975313E+02  0.7975313E+02  0.9060699E+02  0.6758292E+02
+ T=  0.6750494E+02  0.6750494E+02  0.6750687E+02  0.6750687E+02
+ T=  0.6755355E+02  0.6755355E+02  0.6761081E+02  0.6761081E+02
+ T= -0.1386307E+03  0.7500000E+02  0.7500000E+02  0.7500000E+02
+ T=  0.7500000E+02  0.7500000E+02  0.0000000E+00  0.0000000E+00
+ T=  0.0000000E+00  0.0000000E+00  0.0000000E+00  0.8595538E+02
+ T=  0.1009756E+03
