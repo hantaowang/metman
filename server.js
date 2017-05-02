@@ -5,8 +5,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 // for importing routes
-var index = require('./routes/index');
-var ucbmfet = require('./routes/ucbmfet');
 var metman = require('./routes/metman')
 var app = express();
 
@@ -23,7 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // path routes
-app.use('/', index);
+app.use('/', metman);
 //app.use('/ucbmfet', ucbmfet);
 app.use('/metman', metman);
 
